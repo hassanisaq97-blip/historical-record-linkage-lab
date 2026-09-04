@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.snakemake/
+
+# Synthetic data and intermediate pipeline artefacts are regenerated
+# deterministically by `snakemake --snakefile workflow/Snakefile --cores 1`
+# (fixed random seed, see linkage_lab/config.py). Not committed to keep the
+# repository small; results/ (reports + figures) is committed as evidence.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep

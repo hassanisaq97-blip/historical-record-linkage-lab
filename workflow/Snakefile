@@ -1,0 +1,106 @@
+"""Small, real Snakemake workflow orchestrating the linkage_lab pipeline.
+
+Runs locally on the synthetic dataset (a few thousand records) - this is
+explicitly not a claim of HPC/production scale. See docs/limitations.md.
+
+Usage (from the repository root):
+    snakemake --snakefile workflow/Snakefile --cores 1
+"""
+
+DATA_RAW = "data/raw"
+DATA_PROCESSED = "data/processed"
+RESULTS_REPORTS = "results/reports"
+RESULTS_FIGURES = "results/figures"
+
+rule all:
+    input:
+        f"{RESULTS_REPORTS}/metrics_comparison.csv",
+        f"{RESULTS_REPORTS}/life_course_sanity_checks.md",
+        f"{RESULTS_FIGURES}/method_comparison.png",
+        f"{RESULTS_FIGURES}/feature_importance.png",
+
+rule generate_data:
+    output:
+        f"{DATA_RAW}/ground_truth_population.csv",
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+    shell:
+        "python -m linkage_lab.cli generate-data"
+
+rule standardize:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+    output:
+        f"{DATA_PROCESSED}/census_std.csv",
+        f"{DATA_PROCESSED}/parish_std.csv",
+    shell:
+        "python -m linkage_lab.cli standardize"
+
+rule build_dataset:
+    input:
+        f"{DATA_PROCESSED}/census_std.csv",
+        f"{DATA_PROCESSED}/parish_std.csv",
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+    output:
+        f"{DATA_PROCESSED}/candidate_pairs.csv",
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+    shell:
+        "python -m linkage_lab.cli build-dataset"
+
+rule link_rule_based:
+    input:
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+    output:
+        f"{DATA_PROCESSED}/predictions_rule_based.csv",
+    shell:
+        "python -m linkage_lab.cli link-rule-based"
+
+rule link_ml:
+    input:
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+    output:
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+        f"{DATA_PROCESSED}/ml_model.joblib",
+        f"{RESULTS_FIGURES}/feature_importance.png",
+    shell:
+        "python -m linkage_lab.cli link-ml"
+
+rule evaluate:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+        f"{DATA_PROCESSED}/predictions_rule_based.csv",
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{RESULTS_REPORTS}/metrics_comparison.csv",
+        f"{RESULTS_FIGURES}/method_comparison.png",
+    shell:
+        "python -m linkage_lab.cli evaluate"
+
+rule life_course:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+        f"{DATA_PROCESSED}/predictions_rule_based.csv",
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{RESULTS_REPORTS}/life_course_sanity_checks.md",
+    shell:
+        "python -m linkage_lab.cli life-course"
+
+# Not part of `rule all`: experimental, requires the caller's own
+# ANTHROPIC_API_KEY, and is never used for the headline metrics. Run
+# explicitly with:
+#   snakemake --snakefile workflow/Snakefile --cores 1 llm_supplement
+rule llm_supplement:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{RESULTS_REPORTS}/llm_experimental_supplement.md",
+    shell:
+        "python -m linkage_lab.cli link-llm-experimental"

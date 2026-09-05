@@ -34,8 +34,8 @@ om skalerbarhed til produktionsstørrelse.
   projektets forfatter (ikke en uafhængig ekspert, ikke krydstjekket mod
   andre kilder), og stikprøven blev bevidst beriget med
   stærk-evidens-par, fordi en ren tilfældig stikprøve på 80 par kun gav
-  ét klart positivt eksempel. De rapporterede NYC-metrics (afsnit 11 i
-  README) er derfor indikative, ikke en præcis performance-måling, og
+  ét klart positivt eksempel. De rapporterede NYC-metrics (se
+  `docs/results.md`) er derfor indikative, ikke en præcis performance-måling, og
   benchmarkets 15,2 % positive andel afspejler **ikke** den sande
   dublet-rate i datasættet.
 
@@ -91,7 +91,7 @@ tværs af metoder, ikke fordi det er bevist optimalt.
 
 ## 7. False-positive-forplantning
 
-Se README afsnit 11 ("Fejlanalyse") for den fulde diskussion: en forkert
+Se docs/results.md ("Fejlanalyse") for den fulde diskussion: en forkert
 pairwise-kobling bliver til en strukturel fejl (multi_match) når den
 aggregeres til et livsforløb/en entitet. Dette er empirisk bekræftet på
 begge datasæt: den mere permissive ML-metode har markant flere flaggede
@@ -102,7 +102,7 @@ primært drevet af multi_match - ikke af de andre sanity-check-typer.
 
 Uafhængig par-klassifikation kan acceptere flere links til samme record.
 Dette er nu afhjulpet med generisk one-to-one constrained assignment
-(`constrained_assignment.py`, se README afsnit 10) - men constraint har
+(`constrained_assignment.py`, se docs/architecture.md) - men constraint har
 selv en begrænsning: den kan kun **fjerne** par, aldrig tilføje eller
 korrigere dem. Et par, der individuelt er forkert klassificeret men ikke
 konkurrerer med et bedre alternativ om samme record, overlever constraint
@@ -135,7 +135,7 @@ identisk navn, erhverv OG adresse ville ikke blive flagget).
 empirisk ved direkte forbindelsesforsøg), så hverken Ollama eller en
 model kunne installeres. Ingen LLM-resultater er derfor rapporteret eller
 opfundet - se `results/reports/llm_experimental_supplement.md` for den
-faktiske (tomme) status og README afsnit 14 for en fuld, ærlig diskussion
+faktiske (tomme) status og docs/architecture.md for en fuld, ærlig diskussion
 af metodens generelle begrænsninger (non-determinisme, hallucination,
 reproducerbarhed, latency, kalibrering, privacy, beregningsomkostning).
 
@@ -153,7 +153,7 @@ reproducerbarhed, latency, kalibrering, privacy, beregningsomkostning).
   køre på egentlig HPC-infrastruktur.
 - **Frontend/dashboard.** Resultater leveres som CSV/Markdown-rapporter
   og statiske figurer, ikke en interaktiv applikation.
-- **Flere directory-årgange.** Se README afsnit 5.2 og
+- **Flere directory-årgange.** Se `docs/architecture.md` og
   `docs/dataset_selection_notes.md` - kun én årgang er tilgængelig uden
   API-nøgle fra et miljø med denne netværksbegrænsning.
 - **Professionel erfaring med historical record linkage, HPC, GNN eller

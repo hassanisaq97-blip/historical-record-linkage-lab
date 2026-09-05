@@ -12,10 +12,17 @@ udviklet af eller for Rigsarkivet, og bruger **ingen** HisPeR-data.
 
 ## Pipeline
 
+```mermaid
+flowchart LR
+    A[Historiske data] --> B[Standardisering]
+    B --> C[Blocking]
+    C --> D[Similarity features]
+    D --> E[Record linkage]
+    E --> F[One-to-one matching]
+    F --> G[Kvalitetskontrol]
 ```
-Historiske data → Standardisering → Blocking → Similarity features
-→ Record linkage → One-to-one matching → Kvalitetskontrol
-```
+
+*Samme seks trin kører for både det syntetiske datasæt og NYC-directory-casen, med skema-specifikke moduler under trin B-D.*
 
 - **Standardisering** – renser navne/erhverv/adresser uden at fjerne information, der er nyttig til kobling.
 - **Blocking** – reducerer kandidatpar med over 99 %, så vi ikke sammenligner alle poster med alle.
@@ -52,6 +59,10 @@ Syntetisk benchmark, testsplit:
 | Rule-based | 0,721 |
 | Random Forest | 0,846 |
 | Random Forest + constrained assignment | 0,878 |
+
+![Precision, recall og F1 for regelbaseret vs. ML-linkage på det syntetiske testsplit](results/figures/method_comparison.png)
+
+*Rule-based har næsten perfekt precision men lav recall; Random Forest vender billedet om. Constrained assignment (ikke vist her, se tabel) tager det bedste fra begge ved at efterbehandle ML-modellens output.*
 
 One-to-one constrained assignment løfter precision fra **0,470 til
 0,836** blandt de accepterede par, og eliminerer samtlige 2.315

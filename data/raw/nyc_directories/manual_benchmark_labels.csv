@@ -1,0 +1,93 @@
+record_id_a,record_id_b,is_match,annotator_confidence,rationale,sampling_stratum
+nypl_1851_1852_doggetts_002980,nypl_1851_1852_doggetts_003144,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001073,nypl_1851_1852_doggetts_002222,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001678,nypl_1851_1852_doggetts_001708,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_007408,nypl_1851_1852_doggetts_007409,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006008,nypl_1851_1852_doggetts_006104,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000906,nypl_1851_1852_doggetts_004459,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002246,nypl_1851_1852_doggetts_005973,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000792,nypl_1851_1852_doggetts_006842,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004662,nypl_1851_1852_doggetts_004734,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004633,nypl_1851_1852_doggetts_004726,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000744,nypl_1851_1852_doggetts_000748,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_003957,nypl_1851_1852_doggetts_004211,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004983,nypl_1851_1852_doggetts_005083,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006835,nypl_1851_1852_doggetts_006839,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001023,nypl_1851_1852_doggetts_001352,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006086,nypl_1851_1852_doggetts_006139,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004148,nypl_1851_1852_doggetts_004150,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002980,nypl_1851_1852_doggetts_003148,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006131,nypl_1851_1852_doggetts_006132,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004452,nypl_1851_1852_doggetts_004578,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004027,nypl_1851_1852_doggetts_006723,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004682,nypl_1851_1852_doggetts_004767,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002557,nypl_1851_1852_doggetts_005627,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_003575,nypl_1851_1852_doggetts_005969,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000401,nypl_1851_1852_doggetts_005922,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001431,nypl_1851_1852_doggetts_006561,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_007205,nypl_1851_1852_doggetts_007275,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000560,nypl_1851_1852_doggetts_003444,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_007177,nypl_1851_1852_doggetts_007270,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002984,nypl_1851_1852_doggetts_003147,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_003953,nypl_1851_1852_doggetts_003954,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001486,nypl_1851_1852_doggetts_006879,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002831,nypl_1851_1852_doggetts_003181,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_003051,nypl_1851_1852_doggetts_003057,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002633,nypl_1851_1852_doggetts_002634,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_007975,nypl_1851_1852_doggetts_007978,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002450,nypl_1851_1852_doggetts_004315,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005068,nypl_1851_1852_doggetts_005073,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000652,nypl_1851_1852_doggetts_000653,1,medium,"sjaeldent fornavn ""oswald""+""oswald j"", relateret erhverv (brokers/cash mer bank), begge adresser paa wall st / naerliggende hjem",random
+nypl_1851_1852_doggetts_001431,nypl_1851_1852_doggetts_001434,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006005,nypl_1851_1852_doggetts_006399,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000097,nypl_1851_1852_doggetts_000099,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005202,nypl_1851_1852_doggetts_005211,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005214,nypl_1851_1852_doggetts_005217,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001763,nypl_1851_1852_doggetts_002314,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_007834,nypl_1851_1852_doggetts_007839,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002935,nypl_1851_1852_doggetts_003116,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004480,nypl_1851_1852_doggetts_004481,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002242,nypl_1851_1852_doggetts_005016,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006969,nypl_1851_1852_doggetts_007032,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000809,nypl_1851_1852_doggetts_000810,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002810,nypl_1851_1852_doggetts_002811,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002669,nypl_1851_1852_doggetts_005061,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000886,nypl_1851_1852_doggetts_005140,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002964,nypl_1851_1852_doggetts_002966,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005331,nypl_1851_1852_doggetts_006164,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002768,nypl_1851_1852_doggetts_002769,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000754,nypl_1851_1852_doggetts_002098,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000659,nypl_1851_1852_doggetts_004768,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004740,nypl_1851_1852_doggetts_004742,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002887,nypl_1851_1852_doggetts_002943,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004656,nypl_1851_1852_doggetts_004726,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000714,nypl_1851_1852_doggetts_002095,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002950,nypl_1851_1852_doggetts_006726,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002949,nypl_1851_1852_doggetts_003120,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002335,nypl_1851_1852_doggetts_003806,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005473,nypl_1851_1852_doggetts_005490,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_004620,nypl_1851_1852_doggetts_004648,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002753,nypl_1851_1852_doggetts_002763,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006167,nypl_1851_1852_doggetts_006574,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006793,nypl_1851_1852_doggetts_006816,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002930,nypl_1851_1852_doggetts_002945,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_006536,nypl_1851_1852_doggetts_006555,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001535,nypl_1851_1852_doggetts_002586,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000885,nypl_1851_1852_doggetts_004946,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005036,nypl_1851_1852_doggetts_005041,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_002491,nypl_1851_1852_doggetts_006036,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_001763,nypl_1851_1852_doggetts_003449,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_000660,nypl_1851_1852_doggetts_004783,0,medium,"fael les efternavn+forbogstav, men ingen understoettende erhvervs-/adressebevis",random
+nypl_1851_1852_doggetts_005026,nypl_1851_1852_doggetts_005038,1,medium,"samme adresse+erhverv; ""john son"" kan vaere far/søns fælles forretning, ikke sikkert samme individ",purposive_strong_evidence
+nypl_1851_1852_doggetts_000605,nypl_1851_1852_doggetts_004280,1,high,"identisk adresse (business+home) og erhverv, samme fornavn",purposive_strong_evidence
+nypl_1851_1852_doggetts_003256,nypl_1851_1852_doggetts_003257,1,medium,"samme fornavn+erhverv, adresser paa samme gade (greenwich), forskellige numre",purposive_strong_evidence
+nypl_1851_1852_doggetts_002940,nypl_1851_1852_doggetts_002946,1,medium,"samme erhverv, naerliggende adresser paa begge gader (hudson/vandam)",purposive_strong_evidence
+nypl_1851_1852_doggetts_003013,nypl_1851_1852_doggetts_003017,1,high,"b""91 varick"" (hjem) matcher a""9 1 varick"" (business, OCR-mellemrum) - samme adresse i to roller",purposive_strong_evidence
+nypl_1851_1852_doggetts_004410,nypl_1851_1852_doggetts_004539,1,high,"identisk adresse (business+home), erhverv og fornavn",purposive_strong_evidence
+nypl_1851_1852_doggetts_004455,nypl_1851_1852_doggetts_004813,1,medium,"samme erhverv+fornavn, adresser paa samme gade (ridge), forskellige numre",purposive_strong_evidence
+nypl_1851_1852_doggetts_006785,nypl_1851_1852_doggetts_006794,1,low,"formentlig OCR/kolonne-duplikeringsartefakt (""ames"" er ikke et rigtigt erhverv) - ikke en ren tekstdublet, men kan afspejle samme underliggende kildelinje",purposive_strong_evidence
+nypl_1851_1852_doggetts_004877,nypl_1851_1852_doggetts_004878,1,high,"identisk business-adresse og erhverv, fornavn ""john""/""j ohn c"" konsistent",purposive_strong_evidence
+nypl_1851_1852_doggetts_006549,nypl_1851_1852_doggetts_006550,1,medium,"samme erhverv+fornavn, adressenumre 649/645 hudson meget taet paa hinanden",purposive_strong_evidence
+nypl_1851_1852_doggetts_005629,nypl_1851_1852_doggetts_005630,1,medium,"identisk hjemmeadresse (25 allen), samme erhverv, business-adresse differerer",purposive_strong_evidence
+nypl_1851_1852_doggetts_001491,nypl_1851_1852_doggetts_006594,1,medium,"samme erhverv+fornavn, adressenumre 365/364 cherry naesten identiske",purposive_strong_evidence
+nypl_1851_1852_doggetts_007865,nypl_1851_1852_doggetts_007866,1,high,"samme erhverv, identisk hjemmeadresse, business-adresse OCR-variant af samme gade (""burling""/""hurling"")",purposive_strong_evidence

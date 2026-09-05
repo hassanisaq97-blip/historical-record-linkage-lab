@@ -13,10 +13,12 @@ from . import (
     benchmark,
     blocking,
     config,
+    constrained_assignment,
     data_generation,
     evaluation,
     features,
     life_course,
+    llm_assist,
     linkage_llm,
     linkage_ml,
     linkage_rule_based,
@@ -34,6 +36,7 @@ PATHS = {
     "labeled_pairs": config.DATA_PROCESSED_DIR / "labeled_pairs.csv",
     "predictions_rule_based": config.DATA_PROCESSED_DIR / "predictions_rule_based.csv",
     "predictions_ml": config.DATA_PROCESSED_DIR / "predictions_ml.csv",
+    "constrained_ml": config.DATA_PROCESSED_DIR / "constrained_ml.csv",
     "ml_model": config.DATA_PROCESSED_DIR / "ml_model.joblib",
     "metrics_comparison": config.RESULTS_REPORTS_DIR / "metrics_comparison.csv",
     "error_examples_rule_based": config.RESULTS_REPORTS_DIR / "error_examples_rule_based.md",
@@ -198,6 +201,72 @@ def _life_course_section(method_name: str, predictions: pd.DataFrame, census_raw
     return "\n".join(section), checks
 
 
+def cmd_constrained_assignment(_args) -> None:
+    ml_preds = pd.read_csv(PATHS["predictions_ml"])
+    accepted = ml_preds[ml_preds["predicted_match"] == 1].copy()
+
+    n_conflicts_before = constrained_assignment.count_conflicts(
+        accepted, "census_record_id", "parish_record_id"
+    )
+    constrained = constrained_assignment.solve_one_to_one_assignment(
+        accepted, id_col_a="census_record_id", id_col_b="parish_record_id", score_col="predicted_proba"
+    )
+    n_conflicts_after = constrained_assignment.count_conflicts(
+        constrained, "census_record_id", "parish_record_id"
+    )
+    constrained.to_csv(PATHS["constrained_ml"], index=False)
+
+    with open(config.RESULTS_REPORTS_DIR / "constrained_assignment.md", "w") as f:
+        f.write("# Constrained one-to-one assignment (ML-metode)\n\n")
+        f.write(
+            "Census- og kirkebogsposter er hver især en unik person i den syntetiske "
+            "population, saa hvert census-record boer i princippet matche hoejst ét "
+            "kirkebogs-record og omvendt. Uafhaengig par-klassifikation haandhaever ikke "
+            "dette, hvilket kan skabe konflikter (samme record accepteret i flere links).\n\n"
+        )
+        f.write(f"- Accepterede par (uafhaengig klassifikation): {len(accepted)}\n")
+        f.write(f"- Records med konflikt (>1 accepteret link) FOER constraint: {n_conflicts_before}\n")
+        f.write(f"- Accepterede par EFTER one-to-one constraint: {len(constrained)}\n")
+        f.write(f"- Records med konflikt EFTER constraint: {n_conflicts_after}\n")
+        f.write(f"- Par droppet af constraint: {len(accepted) - len(constrained)}\n\n")
+
+        # `accepted`/`constrained` already carry `is_true_match` from the
+        # synthetic ground truth (both splits). Total true matches in the
+        # full candidate set (not just accepted ones) lets us report recall
+        # too, so the precision gain isn't shown without its recall cost.
+        n_true_matches_total = int(ml_preds["is_true_match"].sum())
+        precision_before = accepted["is_true_match"].mean()
+        recall_before = accepted["is_true_match"].sum() / n_true_matches_total
+        precision_after = constrained["is_true_match"].mean() if len(constrained) else float("nan")
+        recall_after = constrained["is_true_match"].sum() / n_true_matches_total
+
+        def _f1(p, r):
+            return 2 * p * r / (p + r) if (p + r) else 0.0
+
+        f.write("## Effekt paa precision/recall/F1 blandt de accepterede par (alle splits)\n\n")
+        f.write("| | Precision | Recall | F1 | Accepterede par |\n|---|---:|---:|---:|---:|\n")
+        f.write(
+            f"| Foer constraint | {precision_before:.3f} | {recall_before:.3f} | "
+            f"{_f1(precision_before, recall_before):.3f} | {len(accepted)} |\n"
+        )
+        f.write(
+            f"| Efter constraint | {precision_after:.3f} | {recall_after:.3f} | "
+            f"{_f1(precision_after, recall_after):.3f} | {len(constrained)} |\n\n"
+        )
+        f.write(
+            "Constraint handler kun links, som allerede er accepteret af ML-modellen: "
+            "den kan kun fjerne par (aldrig tilfoeje nye), saa recall kan ikke stige - "
+            "men ved at fjerne lavere-scorende konkurrerende par til fordel for det "
+            "hoejest-scorende link pr. record stiger precision markant, fordi mange af "
+            "de droppede par var false positives.\n"
+        )
+
+    print(
+        f"conflicts before={n_conflicts_before}, after={n_conflicts_after}, "
+        f"pairs kept={len(constrained)}/{len(accepted)}"
+    )
+
+
 def cmd_life_course(_args) -> None:
     census_raw = pd.read_csv(PATHS["census_raw"])
     parish_raw = pd.read_csv(PATHS["parish_raw"])
@@ -205,29 +274,39 @@ def cmd_life_course(_args) -> None:
     ml_preds = pd.read_csv(PATHS["predictions_ml"])
 
     rule_section, rule_checks = _life_course_section("rule-based", rule_preds, census_raw, parish_raw)
-    ml_section, ml_checks = _life_course_section("ml_random_forest", ml_preds, census_raw, parish_raw)
+    ml_section, ml_checks = _life_course_section("ml_random_forest (uden constraint)", ml_preds, census_raw, parish_raw)
 
     rule_checks.to_csv(config.RESULTS_REPORTS_DIR / "life_course_checks_rule_based.csv", index=False)
     ml_checks.to_csv(config.RESULTS_REPORTS_DIR / "life_course_checks_ml.csv", index=False)
+
+    sections = [rule_section, ml_section]
+    if PATHS["constrained_ml"].exists():
+        constrained = pd.read_csv(PATHS["constrained_ml"])
+        constrained["predicted_match"] = 1
+        constrained_section, constrained_checks = _life_course_section(
+            "ml_random_forest (med one-to-one constraint)", constrained, census_raw, parish_raw
+        )
+        constrained_checks.to_csv(config.RESULTS_REPORTS_DIR / "life_course_checks_ml_constrained.csv", index=False)
+        sections.append(constrained_section)
+        print(f"ML (constrained) life courses: {len(constrained_checks)}, flagged: {int(constrained_checks['flagged'].sum())}")
 
     with open(PATHS["life_course_report"], "w") as f:
         f.write("# Livsforløb: sanity checks\n\n")
         f.write(
             "Livsforløb konstrueres som sammenhængende komponenter i graf af "
-            "accepterede par-links (uden en one-to-one-begrænsning på match). "
-            "Se docs/limitations.md for diskussion af denne begrænsning.\n\n"
+            "accepterede par-links. For ML-metoden sammenlignes uafhængig "
+            "par-klassifikation med one-to-one constrained assignment (se "
+            "results/reports/constrained_assignment.md) - constraint fjerner "
+            "per konstruktion alle 'multi_match'-konflikter, men retter ikke "
+            "individuelt forkerte links.\n\n"
         )
-        f.write(rule_section)
-        f.write("\n")
-        f.write(ml_section)
+        f.write("\n\n".join(sections))
 
     print(f"Rule-based life courses: {len(rule_checks)}, flagged: {int(rule_checks['flagged'].sum())}")
     print(f"ML life courses: {len(ml_checks)}, flagged: {int(ml_checks['flagged'].sum())}")
 
 
 def cmd_link_llm_experimental(_args) -> None:
-    import os
-
     census_raw = pd.read_csv(PATHS["census_raw"])
     parish_raw = pd.read_csv(PATHS["parish_raw"])
     ml_preds = pd.read_csv(PATHS["predictions_ml"])
@@ -238,32 +317,33 @@ def cmd_link_llm_experimental(_args) -> None:
 
     report_path = config.RESULTS_REPORTS_DIR / "llm_experimental_supplement.md"
 
-    if not os.environ.get("ANTHROPIC_API_KEY"):
+    if not llm_assist.is_ollama_available():
         with open(report_path, "w") as f:
             f.write("# LLM-assisteret linkage (eksperimentelt tillæg) - IKKE kørt\n\n")
             f.write(
                 f"Fandt {len(gray_zone)} 'gråzone'-par (ML predicted_proba mellem "
                 f"{linkage_llm.GRAY_ZONE_LOW} og {linkage_llm.GRAY_ZONE_HIGH}), men "
-                "ANTHROPIC_API_KEY er ikke sat, så intet API-kald er foretaget.\n\n"
-                "Dette er forventet: dette trin kræver brugerens egen API-nøgle og "
-                "indgår bevidst ikke i hovedpipelinen eller i README's rapporterede "
-                "precision/recall/F1-tal. Se docs/limitations.md.\n"
+                "ingen lokal Ollama-server blev fundet paa "
+                f"{llm_assist.DEFAULT_OLLAMA_URL} (forsoegt via GET /api/tags).\n\n"
+                "Dette er forventet i dette udviklingsmiljoe, hvor netvaerksadgang til "
+                "ollama.com/registry.ollama.ai er blokeret (verificeret empirisk - se "
+                "docs/limitations.md), saa Ollama og en model kan ikke installeres her. "
+                "Trinnet indgaar bevidst ikke i hovedpipelinen eller i README's "
+                "rapporterede precision/recall/F1-tal. Kør selv med:\n\n"
+                "```bash\n"
+                "ollama serve &\n"
+                "ollama pull llama3.2\n"
+                "snakemake --snakefile workflow/Snakefile --cores 1 llm_supplement\n"
+                "```\n"
             )
-        print(f"ANTHROPIC_API_KEY not set - wrote placeholder report for {len(gray_zone)} gray-zone pairs.")
+        print(f"Ollama not reachable - wrote placeholder report for {len(gray_zone)} gray-zone pairs.")
         return
 
-    import anthropic
+    classified = linkage_llm.classify_gray_zone_pairs(gray_zone)
+    classified.to_csv(config.RESULTS_REPORTS_DIR / "llm_experimental_supplement.csv", index=False)
 
-    client = anthropic.Anthropic()
-    results = []
-    for _, row in gray_zone.iterrows():
-        prompt = linkage_llm.build_prompt(row)
-        raw_response = linkage_llm.classify_pair_with_llm(prompt, client)
-        results.append(linkage_llm.parse_response(raw_response))
-
-    gray_zone["llm_verdict"] = results
-    gray_zone.to_csv(config.RESULTS_REPORTS_DIR / "llm_experimental_supplement.csv", index=False)
-    print(f"Classified {len(gray_zone)} gray-zone pairs with the LLM supplement.")
+    n_ok = classified["llm_error_reason"].isna().sum()
+    print(f"Classified {n_ok}/{len(classified)} gray-zone pairs with the local Ollama model.")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -276,6 +356,7 @@ def build_parser() -> argparse.ArgumentParser:
         "build-dataset": cmd_build_dataset,
         "link-rule-based": cmd_link_rule_based,
         "link-ml": cmd_link_ml,
+        "constrained-assignment": cmd_constrained_assignment,
         "evaluate": cmd_evaluate,
         "life-course": cmd_life_course,
         "link-llm-experimental": cmd_link_llm_experimental,

@@ -1,0 +1,573 @@
+entity_id,n_records,record_ids,mean_link_confidence,issues,flagged
+0,8,"['nypl_1851_1852_doggetts_002818', 'nypl_1851_1852_doggetts_002819', 'nypl_1851_1852_doggetts_002820', 'nypl_1851_1852_doggetts_002822', 'nypl_1851_1852_doggetts_002824', 'nypl_1851_1852_doggetts_002825', 'nypl_1851_1852_doggetts_003104', 'nypl_1851_1852_doggetts_003181']",0.674375,"['multi_match', 'conflicting_occupation']",True
+1,2,"['nypl_1851_1852_doggetts_001254', 'nypl_1851_1852_doggetts_001258']",0.54,[],False
+2,2,"['nypl_1851_1852_doggetts_004283', 'nypl_1851_1852_doggetts_004284']",0.525,['conflicting_occupation'],True
+3,10,"['nypl_1851_1852_doggetts_007148', 'nypl_1851_1852_doggetts_007180', 'nypl_1851_1852_doggetts_007265', 'nypl_1851_1852_doggetts_007271', 'nypl_1851_1852_doggetts_007272', 'nypl_1851_1852_doggetts_007273', 'nypl_1851_1852_doggetts_007274', 'nypl_1851_1852_doggetts_007280', 'nypl_1851_1852_doggetts_007282', 'nypl_1851_1852_doggetts_007283']",0.5413333333333334,['multi_match'],True
+4,12,"['nypl_1851_1852_doggetts_001008', 'nypl_1851_1852_doggetts_001022', 'nypl_1851_1852_doggetts_001347', 'nypl_1851_1852_doggetts_001352', 'nypl_1851_1852_doggetts_001354', 'nypl_1851_1852_doggetts_001356', 'nypl_1851_1852_doggetts_001357', 'nypl_1851_1852_doggetts_005607', 'nypl_1851_1852_doggetts_006173', 'nypl_1851_1852_doggetts_006927', 'nypl_1851_1852_doggetts_006935', 'nypl_1851_1852_doggetts_006936']",0.5379166666666667,['multi_match'],True
+5,2,"['nypl_1851_1852_doggetts_000754', 'nypl_1851_1852_doggetts_000774']",0.52,[],False
+6,4,"['nypl_1851_1852_doggetts_006037', 'nypl_1851_1852_doggetts_006043', 'nypl_1851_1852_doggetts_006044', 'nypl_1851_1852_doggetts_006046']",0.5333333333333333,['multi_match'],True
+7,2,"['nypl_1851_1852_doggetts_000430', 'nypl_1851_1852_doggetts_003759']",0.54,[],False
+8,3,"['nypl_1851_1852_doggetts_005482', 'nypl_1851_1852_doggetts_005489', 'nypl_1851_1852_doggetts_005557']",0.71,['multi_match'],True
+9,3,"['nypl_1851_1852_doggetts_000554', 'nypl_1851_1852_doggetts_003407', 'nypl_1851_1852_doggetts_003978']",0.52,['multi_match'],True
+10,5,"['nypl_1851_1852_doggetts_002958', 'nypl_1851_1852_doggetts_002962', 'nypl_1851_1852_doggetts_002966', 'nypl_1851_1852_doggetts_002970', 'nypl_1851_1852_doggetts_003135']",0.525,"['multi_match', 'conflicting_occupation']",True
+11,30,"['nypl_1851_1852_doggetts_001018', 'nypl_1851_1852_doggetts_001019', 'nypl_1851_1852_doggetts_001020', 'nypl_1851_1852_doggetts_001341', 'nypl_1851_1852_doggetts_001342', 'nypl_1851_1852_doggetts_001344', 'nypl_1851_1852_doggetts_001345', 'nypl_1851_1852_doggetts_001346', 'nypl_1851_1852_doggetts_001349', 'nypl_1851_1852_doggetts_001350', 'nypl_1851_1852_doggetts_001353', 'nypl_1851_1852_doggetts_001355', 'nypl_1851_1852_doggetts_001358', 'nypl_1851_1852_doggetts_001651', 'nypl_1851_1852_doggetts_001653', 'nypl_1851_1852_doggetts_002345', 'nypl_1851_1852_doggetts_002346', 'nypl_1851_1852_doggetts_005390', 'nypl_1851_1852_doggetts_005403', 'nypl_1851_1852_doggetts_005608', 'nypl_1851_1852_doggetts_006113', 'nypl_1851_1852_doggetts_006204', 'nypl_1851_1852_doggetts_006541', 'nypl_1851_1852_doggetts_006542', 'nypl_1851_1852_doggetts_006869', 'nypl_1851_1852_doggetts_006928', 'nypl_1851_1852_doggetts_006929', 'nypl_1851_1852_doggetts_006931', 'nypl_1851_1852_doggetts_006933', 'nypl_1851_1852_doggetts_006938']",0.5782894736842105,['multi_match'],True
+12,4,"['nypl_1851_1852_doggetts_001989', 'nypl_1851_1852_doggetts_002295', 'nypl_1851_1852_doggetts_002301', 'nypl_1851_1852_doggetts_002318']",0.593,"['multi_match', 'conflicting_occupation']",True
+13,11,"['nypl_1851_1852_doggetts_000380', 'nypl_1851_1852_doggetts_005187', 'nypl_1851_1852_doggetts_005188', 'nypl_1851_1852_doggetts_005189', 'nypl_1851_1852_doggetts_005190', 'nypl_1851_1852_doggetts_005191', 'nypl_1851_1852_doggetts_005194', 'nypl_1851_1852_doggetts_005195', 'nypl_1851_1852_doggetts_005200', 'nypl_1851_1852_doggetts_005208', 'nypl_1851_1852_doggetts_005210']",0.5426923076923077,['multi_match'],True
+14,4,"['nypl_1851_1852_doggetts_006835', 'nypl_1851_1852_doggetts_006837', 'nypl_1851_1852_doggetts_006838', 'nypl_1851_1852_doggetts_006839']",0.5716666666666667,['multi_match'],True
+15,2,"['nypl_1851_1852_doggetts_007848', 'nypl_1851_1852_doggetts_007851']",0.625,[],False
+16,2,"['nypl_1851_1852_doggetts_002991', 'nypl_1851_1852_doggetts_003146']",0.515,[],False
+17,2,"['nypl_1851_1852_doggetts_001458', 'nypl_1851_1852_doggetts_006576']",0.51,[],False
+18,5,"['nypl_1851_1852_doggetts_000074', 'nypl_1851_1852_doggetts_000075', 'nypl_1851_1852_doggetts_000079', 'nypl_1851_1852_doggetts_000081', 'nypl_1851_1852_doggetts_000090']",0.6990000000000001,"['multi_match', 'conflicting_occupation']",True
+19,12,"['nypl_1851_1852_doggetts_003573', 'nypl_1851_1852_doggetts_003703', 'nypl_1851_1852_doggetts_004968', 'nypl_1851_1852_doggetts_004972', 'nypl_1851_1852_doggetts_004974', 'nypl_1851_1852_doggetts_004976', 'nypl_1851_1852_doggetts_004978', 'nypl_1851_1852_doggetts_004979', 'nypl_1851_1852_doggetts_005945', 'nypl_1851_1852_doggetts_005946', 'nypl_1851_1852_doggetts_005947', 'nypl_1851_1852_doggetts_005951']",0.5376923076923077,"['multi_match', 'conflicting_occupation']",True
+20,5,"['nypl_1851_1852_doggetts_004708', 'nypl_1851_1852_doggetts_006789', 'nypl_1851_1852_doggetts_006793', 'nypl_1851_1852_doggetts_006795', 'nypl_1851_1852_doggetts_006813']",0.54,['multi_match'],True
+21,3,"['nypl_1851_1852_doggetts_004755', 'nypl_1851_1852_doggetts_004756', 'nypl_1851_1852_doggetts_004866']",0.5283333333333333,['multi_match'],True
+22,32,"['nypl_1851_1852_doggetts_000390', 'nypl_1851_1852_doggetts_000416', 'nypl_1851_1852_doggetts_000419', 'nypl_1851_1852_doggetts_000434', 'nypl_1851_1852_doggetts_000435', 'nypl_1851_1852_doggetts_000437', 'nypl_1851_1852_doggetts_000885', 'nypl_1851_1852_doggetts_000886', 'nypl_1851_1852_doggetts_002593', 'nypl_1851_1852_doggetts_003763', 'nypl_1851_1852_doggetts_003764', 'nypl_1851_1852_doggetts_003802', 'nypl_1851_1852_doggetts_004600', 'nypl_1851_1852_doggetts_004604', 'nypl_1851_1852_doggetts_004605', 'nypl_1851_1852_doggetts_004812', 'nypl_1851_1852_doggetts_004940', 'nypl_1851_1852_doggetts_004941', 'nypl_1851_1852_doggetts_004943', 'nypl_1851_1852_doggetts_004944', 'nypl_1851_1852_doggetts_004945', 'nypl_1851_1852_doggetts_004946', 'nypl_1851_1852_doggetts_004947', 'nypl_1851_1852_doggetts_004949', 'nypl_1851_1852_doggetts_004950', 'nypl_1851_1852_doggetts_004951', 'nypl_1851_1852_doggetts_004952', 'nypl_1851_1852_doggetts_004962', 'nypl_1851_1852_doggetts_005138', 'nypl_1851_1852_doggetts_005139', 'nypl_1851_1852_doggetts_005140', 'nypl_1851_1852_doggetts_005141']",0.5839090909090908,"['multi_match', 'conflicting_occupation']",True
+23,2,"['nypl_1851_1852_doggetts_002263', 'nypl_1851_1852_doggetts_002265']",0.655,[],False
+24,2,"['nypl_1851_1852_doggetts_005359', 'nypl_1851_1852_doggetts_005373']",0.79,[],False
+25,2,"['nypl_1851_1852_doggetts_002614', 'nypl_1851_1852_doggetts_006413']",0.85,[],False
+26,2,"['nypl_1851_1852_doggetts_006549', 'nypl_1851_1852_doggetts_006550']",1.0,[],False
+27,2,"['nypl_1851_1852_doggetts_003049', 'nypl_1851_1852_doggetts_003060']",0.53,[],False
+28,6,"['nypl_1851_1852_doggetts_000509', 'nypl_1851_1852_doggetts_000561', 'nypl_1851_1852_doggetts_000564', 'nypl_1851_1852_doggetts_000566', 'nypl_1851_1852_doggetts_006715', 'nypl_1851_1852_doggetts_006718']",0.5663636363636363,['multi_match'],True
+29,2,"['nypl_1851_1852_doggetts_002127', 'nypl_1851_1852_doggetts_002332']",0.555,[],False
+30,4,"['nypl_1851_1852_doggetts_003553', 'nypl_1851_1852_doggetts_003561', 'nypl_1851_1852_doggetts_003720', 'nypl_1851_1852_doggetts_004996']",0.7116666666666666,"['multi_match', 'conflicting_occupation']",True
+31,2,"['nypl_1851_1852_doggetts_001761', 'nypl_1851_1852_doggetts_001762']",0.94,[],False
+32,2,"['nypl_1851_1852_doggetts_003461', 'nypl_1851_1852_doggetts_004117']",0.54,[],False
+33,2,"['nypl_1851_1852_doggetts_005499', 'nypl_1851_1852_doggetts_005500']",0.955,[],False
+34,2,"['nypl_1851_1852_doggetts_001173', 'nypl_1851_1852_doggetts_006896']",0.54,[],False
+35,4,"['nypl_1851_1852_doggetts_001269', 'nypl_1851_1852_doggetts_001270', 'nypl_1851_1852_doggetts_001277', 'nypl_1851_1852_doggetts_001278']",0.535,['multi_match'],True
+36,3,"['nypl_1851_1852_doggetts_006801', 'nypl_1851_1852_doggetts_006802', 'nypl_1851_1852_doggetts_006818']",0.5525,['multi_match'],True
+37,53,"['nypl_1851_1852_doggetts_002888', 'nypl_1851_1852_doggetts_002889', 'nypl_1851_1852_doggetts_002891', 'nypl_1851_1852_doggetts_002894', 'nypl_1851_1852_doggetts_002895', 'nypl_1851_1852_doggetts_002896', 'nypl_1851_1852_doggetts_002901', 'nypl_1851_1852_doggetts_002902', 'nypl_1851_1852_doggetts_002903', 'nypl_1851_1852_doggetts_002904', 'nypl_1851_1852_doggetts_002905', 'nypl_1851_1852_doggetts_002906', 'nypl_1851_1852_doggetts_002908', 'nypl_1851_1852_doggetts_002911', 'nypl_1851_1852_doggetts_002913', 'nypl_1851_1852_doggetts_002915', 'nypl_1851_1852_doggetts_002917', 'nypl_1851_1852_doggetts_002919', 'nypl_1851_1852_doggetts_002922', 'nypl_1851_1852_doggetts_002924', 'nypl_1851_1852_doggetts_002925', 'nypl_1851_1852_doggetts_002929', 'nypl_1851_1852_doggetts_002930', 'nypl_1851_1852_doggetts_002931', 'nypl_1851_1852_doggetts_002933', 'nypl_1851_1852_doggetts_002935', 'nypl_1851_1852_doggetts_002937', 'nypl_1851_1852_doggetts_002938', 'nypl_1851_1852_doggetts_002939', 'nypl_1851_1852_doggetts_002940', 'nypl_1851_1852_doggetts_002942', 'nypl_1851_1852_doggetts_002943', 'nypl_1851_1852_doggetts_002944', 'nypl_1851_1852_doggetts_002945', 'nypl_1851_1852_doggetts_002946', 'nypl_1851_1852_doggetts_002948', 'nypl_1851_1852_doggetts_002949', 'nypl_1851_1852_doggetts_002950', 'nypl_1851_1852_doggetts_002951', 'nypl_1851_1852_doggetts_002952', 'nypl_1851_1852_doggetts_003111', 'nypl_1851_1852_doggetts_003112', 'nypl_1851_1852_doggetts_003113', 'nypl_1851_1852_doggetts_003115', 'nypl_1851_1852_doggetts_003116', 'nypl_1851_1852_doggetts_003117', 'nypl_1851_1852_doggetts_003118', 'nypl_1851_1852_doggetts_003119', 'nypl_1851_1852_doggetts_003120', 'nypl_1851_1852_doggetts_003124', 'nypl_1851_1852_doggetts_003128', 'nypl_1851_1852_doggetts_003183', 'nypl_1851_1852_doggetts_006726']",0.5989473684210528,"['multi_match', 'conflicting_occupation']",True
+38,10,"['nypl_1851_1852_doggetts_007160', 'nypl_1851_1852_doggetts_007178', 'nypl_1851_1852_doggetts_007192', 'nypl_1851_1852_doggetts_007197', 'nypl_1851_1852_doggetts_007269', 'nypl_1851_1852_doggetts_007270', 'nypl_1851_1852_doggetts_007276', 'nypl_1851_1852_doggetts_007277', 'nypl_1851_1852_doggetts_007279', 'nypl_1851_1852_doggetts_007286']",0.5623333333333334,['multi_match'],True
+39,2,"['nypl_1851_1852_doggetts_003269', 'nypl_1851_1852_doggetts_003316']",0.69,[],False
+40,2,"['nypl_1851_1852_doggetts_002162', 'nypl_1851_1852_doggetts_002193']",0.555,[],False
+41,2,"['nypl_1851_1852_doggetts_001630', 'nypl_1851_1852_doggetts_005643']",0.525,['conflicting_occupation'],True
+42,4,"['nypl_1851_1852_doggetts_007189', 'nypl_1851_1852_doggetts_007316', 'nypl_1851_1852_doggetts_007317', 'nypl_1851_1852_doggetts_007318']",0.5283333333333333,['multi_match'],True
+43,2,"['nypl_1851_1852_doggetts_000059', 'nypl_1851_1852_doggetts_000184']",0.52,[],False
+44,2,"['nypl_1851_1852_doggetts_002740', 'nypl_1851_1852_doggetts_003864']",0.555,[],False
+45,2,"['nypl_1851_1852_doggetts_001145', 'nypl_1851_1852_doggetts_001158']",0.65,[],False
+46,2,"['nypl_1851_1852_doggetts_004667', 'nypl_1851_1852_doggetts_004745']",0.555,[],False
+47,2,"['nypl_1851_1852_doggetts_007681', 'nypl_1851_1852_doggetts_007840']",0.605,[],False
+48,3,"['nypl_1851_1852_doggetts_001814', 'nypl_1851_1852_doggetts_001819', 'nypl_1851_1852_doggetts_005707']",0.5375000000000001,['multi_match'],True
+49,4,"['nypl_1851_1852_doggetts_004533', 'nypl_1851_1852_doggetts_004536', 'nypl_1851_1852_doggetts_004540', 'nypl_1851_1852_doggetts_004541']",0.5308333333333334,['multi_match'],True
+50,2,"['nypl_1851_1852_doggetts_000808', 'nypl_1851_1852_doggetts_000810']",0.555,[],False
+51,2,"['nypl_1851_1852_doggetts_003050', 'nypl_1851_1852_doggetts_003058']",0.6,[],False
+52,2,"['nypl_1851_1852_doggetts_007322', 'nypl_1851_1852_doggetts_007335']",0.625,[],False
+53,2,"['nypl_1851_1852_doggetts_000939', 'nypl_1851_1852_doggetts_000941']",0.555,[],False
+54,5,"['nypl_1851_1852_doggetts_000384', 'nypl_1851_1852_doggetts_000385', 'nypl_1851_1852_doggetts_005192', 'nypl_1851_1852_doggetts_005193', 'nypl_1851_1852_doggetts_005199']",0.525,['multi_match'],True
+55,3,"['nypl_1851_1852_doggetts_002328', 'nypl_1851_1852_doggetts_005301', 'nypl_1851_1852_doggetts_005839']",0.5375000000000001,['multi_match'],True
+56,2,"['nypl_1851_1852_doggetts_001594', 'nypl_1851_1852_doggetts_001597']",0.72,[],False
+57,2,"['nypl_1851_1852_doggetts_004278', 'nypl_1851_1852_doggetts_004279']",0.555,[],False
+58,2,"['nypl_1851_1852_doggetts_004408', 'nypl_1851_1852_doggetts_004537']",0.74,[],False
+59,2,"['nypl_1851_1852_doggetts_001939', 'nypl_1851_1852_doggetts_001942']",0.555,[],False
+60,5,"['nypl_1851_1852_doggetts_006131', 'nypl_1851_1852_doggetts_006135', 'nypl_1851_1852_doggetts_006137', 'nypl_1851_1852_doggetts_006141', 'nypl_1851_1852_doggetts_006142']",0.5349999999999999,"['multi_match', 'conflicting_occupation']",True
+61,2,"['nypl_1851_1852_doggetts_005467', 'nypl_1851_1852_doggetts_006033']",0.55,['conflicting_occupation'],True
+62,3,"['nypl_1851_1852_doggetts_003521', 'nypl_1851_1852_doggetts_003522', 'nypl_1851_1852_doggetts_003527']",0.6525000000000001,['multi_match'],True
+63,19,"['nypl_1851_1852_doggetts_004453', 'nypl_1851_1852_doggetts_004568', 'nypl_1851_1852_doggetts_004573', 'nypl_1851_1852_doggetts_004574', 'nypl_1851_1852_doggetts_004597', 'nypl_1851_1852_doggetts_004607', 'nypl_1851_1852_doggetts_004626', 'nypl_1851_1852_doggetts_004627', 'nypl_1851_1852_doggetts_004632', 'nypl_1851_1852_doggetts_004633', 'nypl_1851_1852_doggetts_004634', 'nypl_1851_1852_doggetts_004636', 'nypl_1851_1852_doggetts_004655', 'nypl_1851_1852_doggetts_004656', 'nypl_1851_1852_doggetts_004658', 'nypl_1851_1852_doggetts_004726', 'nypl_1851_1852_doggetts_004727', 'nypl_1851_1852_doggetts_004728', 'nypl_1851_1852_doggetts_004814']",0.5581,"['multi_match', 'conflicting_occupation']",True
+64,10,"['nypl_1851_1852_doggetts_001535', 'nypl_1851_1852_doggetts_002511', 'nypl_1851_1852_doggetts_002529', 'nypl_1851_1852_doggetts_002530', 'nypl_1851_1852_doggetts_002532', 'nypl_1851_1852_doggetts_002534', 'nypl_1851_1852_doggetts_002537', 'nypl_1851_1852_doggetts_002558', 'nypl_1851_1852_doggetts_002581', 'nypl_1851_1852_doggetts_006295']",0.5865625,"['multi_match', 'conflicting_occupation']",True
+65,48,"['nypl_1851_1852_doggetts_001678', 'nypl_1851_1852_doggetts_001700', 'nypl_1851_1852_doggetts_001701', 'nypl_1851_1852_doggetts_001702', 'nypl_1851_1852_doggetts_001706', 'nypl_1851_1852_doggetts_001707', 'nypl_1851_1852_doggetts_001708', 'nypl_1851_1852_doggetts_001709', 'nypl_1851_1852_doggetts_001710', 'nypl_1851_1852_doggetts_001711', 'nypl_1851_1852_doggetts_002248', 'nypl_1851_1852_doggetts_002666', 'nypl_1851_1852_doggetts_002667', 'nypl_1851_1852_doggetts_003575', 'nypl_1851_1852_doggetts_003576', 'nypl_1851_1852_doggetts_005022', 'nypl_1851_1852_doggetts_005023', 'nypl_1851_1852_doggetts_005024', 'nypl_1851_1852_doggetts_005025', 'nypl_1851_1852_doggetts_005026', 'nypl_1851_1852_doggetts_005027', 'nypl_1851_1852_doggetts_005031', 'nypl_1851_1852_doggetts_005032', 'nypl_1851_1852_doggetts_005033', 'nypl_1851_1852_doggetts_005034', 'nypl_1851_1852_doggetts_005036', 'nypl_1851_1852_doggetts_005037', 'nypl_1851_1852_doggetts_005038', 'nypl_1851_1852_doggetts_005040', 'nypl_1851_1852_doggetts_005088', 'nypl_1851_1852_doggetts_005089', 'nypl_1851_1852_doggetts_005090', 'nypl_1851_1852_doggetts_005092', 'nypl_1851_1852_doggetts_005968', 'nypl_1851_1852_doggetts_005969', 'nypl_1851_1852_doggetts_005970', 'nypl_1851_1852_doggetts_005974', 'nypl_1851_1852_doggetts_005976', 'nypl_1851_1852_doggetts_005977', 'nypl_1851_1852_doggetts_005978', 'nypl_1851_1852_doggetts_005979', 'nypl_1851_1852_doggetts_005980', 'nypl_1851_1852_doggetts_005982', 'nypl_1851_1852_doggetts_005983', 'nypl_1851_1852_doggetts_005986', 'nypl_1851_1852_doggetts_005989', 'nypl_1851_1852_doggetts_005990', 'nypl_1851_1852_doggetts_005991']",0.6050990099009901,"['multi_match', 'conflicting_occupation']",True
+66,2,"['nypl_1851_1852_doggetts_001660', 'nypl_1851_1852_doggetts_001661']",0.56,[],False
+67,3,"['nypl_1851_1852_doggetts_001359', 'nypl_1851_1852_doggetts_006882', 'nypl_1851_1852_doggetts_006884']",0.5275000000000001,['multi_match'],True
+68,2,"['nypl_1851_1852_doggetts_001117', 'nypl_1851_1852_doggetts_002222']",0.515,[],False
+69,2,"['nypl_1851_1852_doggetts_000805', 'nypl_1851_1852_doggetts_000806']",0.58,[],False
+70,2,"['nypl_1851_1852_doggetts_006195', 'nypl_1851_1852_doggetts_006522']",0.565,[],False
+71,5,"['nypl_1851_1852_doggetts_001177', 'nypl_1851_1852_doggetts_001178', 'nypl_1851_1852_doggetts_001179', 'nypl_1851_1852_doggetts_002491', 'nypl_1851_1852_doggetts_006049']",0.52875,['multi_match'],True
+72,28,"['nypl_1851_1852_doggetts_001058', 'nypl_1851_1852_doggetts_001059', 'nypl_1851_1852_doggetts_001060', 'nypl_1851_1852_doggetts_001416', 'nypl_1851_1852_doggetts_001439', 'nypl_1851_1852_doggetts_001440', 'nypl_1851_1852_doggetts_001448', 'nypl_1851_1852_doggetts_001449', 'nypl_1851_1852_doggetts_001452', 'nypl_1851_1852_doggetts_001453', 'nypl_1851_1852_doggetts_001455', 'nypl_1851_1852_doggetts_001456', 'nypl_1851_1852_doggetts_001457', 'nypl_1851_1852_doggetts_001460', 'nypl_1851_1852_doggetts_001461', 'nypl_1851_1852_doggetts_001465', 'nypl_1851_1852_doggetts_001466', 'nypl_1851_1852_doggetts_006166', 'nypl_1851_1852_doggetts_006564', 'nypl_1851_1852_doggetts_006565', 'nypl_1851_1852_doggetts_006577', 'nypl_1851_1852_doggetts_006578', 'nypl_1851_1852_doggetts_006580', 'nypl_1851_1852_doggetts_006581', 'nypl_1851_1852_doggetts_006582', 'nypl_1851_1852_doggetts_006583', 'nypl_1851_1852_doggetts_006584', 'nypl_1851_1852_doggetts_006586']",0.5433928571428571,"['multi_match', 'conflicting_occupation']",True
+73,2,"['nypl_1851_1852_doggetts_003822', 'nypl_1851_1852_doggetts_004442']",0.52,[],False
+74,3,"['nypl_1851_1852_doggetts_004763', 'nypl_1851_1852_doggetts_004774', 'nypl_1851_1852_doggetts_004778']",0.525,['multi_match'],True
+75,2,"['nypl_1851_1852_doggetts_004735', 'nypl_1851_1852_doggetts_004736']",0.545,[],False
+76,2,"['nypl_1851_1852_doggetts_007919', 'nypl_1851_1852_doggetts_007922']",0.745,[],False
+77,3,"['nypl_1851_1852_doggetts_000778', 'nypl_1851_1852_doggetts_000785', 'nypl_1851_1852_doggetts_000787']",0.5875,['multi_match'],True
+78,2,"['nypl_1851_1852_doggetts_001281', 'nypl_1851_1852_doggetts_001282']",0.52,[],False
+79,2,"['nypl_1851_1852_doggetts_002814', 'nypl_1851_1852_doggetts_002817']",0.565,[],False
+80,3,"['nypl_1851_1852_doggetts_000761', 'nypl_1851_1852_doggetts_000763', 'nypl_1851_1852_doggetts_000768']",0.5283333333333333,['multi_match'],True
+81,2,"['nypl_1851_1852_doggetts_002756', 'nypl_1851_1852_doggetts_003093']",0.71,[],False
+82,3,"['nypl_1851_1852_doggetts_000259', 'nypl_1851_1852_doggetts_000260', 'nypl_1851_1852_doggetts_000323']",0.5583333333333335,['multi_match'],True
+83,4,"['nypl_1851_1852_doggetts_001679', 'nypl_1851_1852_doggetts_001712', 'nypl_1851_1852_doggetts_005041', 'nypl_1851_1852_doggetts_005988']",0.5466666666666667,['multi_match'],True
+84,2,"['nypl_1851_1852_doggetts_001102', 'nypl_1851_1852_doggetts_001471']",0.64,[],False
+85,27,"['nypl_1851_1852_doggetts_000577', 'nypl_1851_1852_doggetts_002337', 'nypl_1851_1852_doggetts_004340', 'nypl_1851_1852_doggetts_004677', 'nypl_1851_1852_doggetts_004679', 'nypl_1851_1852_doggetts_004680', 'nypl_1851_1852_doggetts_004681', 'nypl_1851_1852_doggetts_004682', 'nypl_1851_1852_doggetts_004684', 'nypl_1851_1852_doggetts_004686', 'nypl_1851_1852_doggetts_004687', 'nypl_1851_1852_doggetts_004760', 'nypl_1851_1852_doggetts_004762', 'nypl_1851_1852_doggetts_004764', 'nypl_1851_1852_doggetts_004765', 'nypl_1851_1852_doggetts_004768', 'nypl_1851_1852_doggetts_004771', 'nypl_1851_1852_doggetts_004772', 'nypl_1851_1852_doggetts_004775', 'nypl_1851_1852_doggetts_004777', 'nypl_1851_1852_doggetts_004858', 'nypl_1851_1852_doggetts_004859', 'nypl_1851_1852_doggetts_004873', 'nypl_1851_1852_doggetts_004875', 'nypl_1851_1852_doggetts_004877', 'nypl_1851_1852_doggetts_004878', 'nypl_1851_1852_doggetts_004892']",0.5741836734693878,['multi_match'],True
+86,5,"['nypl_1851_1852_doggetts_004642', 'nypl_1851_1852_doggetts_004665', 'nypl_1851_1852_doggetts_004666', 'nypl_1851_1852_doggetts_004738', 'nypl_1851_1852_doggetts_004741']",0.6007142857142858,['multi_match'],True
+87,2,"['nypl_1851_1852_doggetts_001518', 'nypl_1851_1852_doggetts_006415']",0.555,[],False
+88,3,"['nypl_1851_1852_doggetts_003083', 'nypl_1851_1852_doggetts_003160', 'nypl_1851_1852_doggetts_003185']",0.5375000000000001,"['multi_match', 'conflicting_occupation']",True
+89,2,"['nypl_1851_1852_doggetts_000942', 'nypl_1851_1852_doggetts_004707']",0.555,[],False
+90,2,"['nypl_1851_1852_doggetts_002853', 'nypl_1851_1852_doggetts_002860']",0.565,[],False
+91,2,"['nypl_1851_1852_doggetts_007743', 'nypl_1851_1852_doggetts_007744']",0.555,[],False
+92,2,"['nypl_1851_1852_doggetts_003636', 'nypl_1851_1852_doggetts_003791']",0.565,[],False
+93,2,"['nypl_1851_1852_doggetts_003897', 'nypl_1851_1852_doggetts_006720']",0.775,[],False
+94,3,"['nypl_1851_1852_doggetts_003836', 'nypl_1851_1852_doggetts_005011', 'nypl_1851_1852_doggetts_005013']",0.5583333333333333,['multi_match'],True
+95,3,"['nypl_1851_1852_doggetts_005414', 'nypl_1851_1852_doggetts_006199', 'nypl_1851_1852_doggetts_006250']",0.5483333333333333,['multi_match'],True
+96,2,"['nypl_1851_1852_doggetts_000543', 'nypl_1851_1852_doggetts_000545']",0.515,[],False
+97,2,"['nypl_1851_1852_doggetts_003297', 'nypl_1851_1852_doggetts_004208']",0.73,[],False
+98,3,"['nypl_1851_1852_doggetts_002705', 'nypl_1851_1852_doggetts_002707', 'nypl_1851_1852_doggetts_003352']",0.5925,"['multi_match', 'conflicting_occupation']",True
+99,2,"['nypl_1851_1852_doggetts_001267', 'nypl_1851_1852_doggetts_001274']",0.53,[],False
+100,2,"['nypl_1851_1852_doggetts_007960', 'nypl_1851_1852_doggetts_007961']",0.58,[],False
+101,2,"['nypl_1851_1852_doggetts_003589', 'nypl_1851_1852_doggetts_003598']",0.58,[],False
+102,2,"['nypl_1851_1852_doggetts_002523', 'nypl_1851_1852_doggetts_006265']",0.52,[],False
+103,4,"['nypl_1851_1852_doggetts_001697', 'nypl_1851_1852_doggetts_004989', 'nypl_1851_1852_doggetts_004992', 'nypl_1851_1852_doggetts_005001']",0.525,['multi_match'],True
+104,2,"['nypl_1851_1852_doggetts_000299', 'nypl_1851_1852_doggetts_000318']",0.545,[],False
+105,2,"['nypl_1851_1852_doggetts_006209', 'nypl_1851_1852_doggetts_006604']",0.55,[],False
+106,2,"['nypl_1851_1852_doggetts_005255', 'nypl_1851_1852_doggetts_005256']",0.545,[],False
+107,2,"['nypl_1851_1852_doggetts_001818', 'nypl_1851_1852_doggetts_001822']",0.53,[],False
+108,5,"['nypl_1851_1852_doggetts_000747', 'nypl_1851_1852_doggetts_000751', 'nypl_1851_1852_doggetts_000753', 'nypl_1851_1852_doggetts_000765', 'nypl_1851_1852_doggetts_004923']",0.534,['multi_match'],True
+109,2,"['nypl_1851_1852_doggetts_003394', 'nypl_1851_1852_doggetts_003416']",0.54,[],False
+110,2,"['nypl_1851_1852_doggetts_005120', 'nypl_1851_1852_doggetts_005122']",0.755,[],False
+111,4,"['nypl_1851_1852_doggetts_000536', 'nypl_1851_1852_doggetts_000538', 'nypl_1851_1852_doggetts_000540', 'nypl_1851_1852_doggetts_004005']",0.56875,"['multi_match', 'conflicting_occupation']",True
+112,3,"['nypl_1851_1852_doggetts_002732', 'nypl_1851_1852_doggetts_002734', 'nypl_1851_1852_doggetts_002735']",0.565,['multi_match'],True
+113,3,"['nypl_1851_1852_doggetts_001191', 'nypl_1851_1852_doggetts_006068', 'nypl_1851_1852_doggetts_006071']",0.545,"['multi_match', 'conflicting_occupation']",True
+114,2,"['nypl_1851_1852_doggetts_001473', 'nypl_1851_1852_doggetts_006587']",0.58,[],False
+115,4,"['nypl_1851_1852_doggetts_002961', 'nypl_1851_1852_doggetts_003137', 'nypl_1851_1852_doggetts_003138', 'nypl_1851_1852_doggetts_003140']",0.555,['multi_match'],True
+116,2,"['nypl_1851_1852_doggetts_002392', 'nypl_1851_1852_doggetts_002394']",0.96,[],False
+117,2,"['nypl_1851_1852_doggetts_001051', 'nypl_1851_1852_doggetts_001507']",0.545,[],False
+118,2,"['nypl_1851_1852_doggetts_002417', 'nypl_1851_1852_doggetts_002418']",0.74,[],False
+119,2,"['nypl_1851_1852_doggetts_000400', 'nypl_1851_1852_doggetts_004213']",0.545,[],False
+120,3,"['nypl_1851_1852_doggetts_003012', 'nypl_1851_1852_doggetts_003021', 'nypl_1851_1852_doggetts_003084']",0.665,['multi_match'],True
+121,2,"['nypl_1851_1852_doggetts_001306', 'nypl_1851_1852_doggetts_001319']",0.56,[],False
+122,2,"['nypl_1851_1852_doggetts_007865', 'nypl_1851_1852_doggetts_007866']",1.0,[],False
+123,3,"['nypl_1851_1852_doggetts_000677', 'nypl_1851_1852_doggetts_000680', 'nypl_1851_1852_doggetts_000690']",0.5275000000000001,"['multi_match', 'conflicting_occupation']",True
+124,4,"['nypl_1851_1852_doggetts_007177', 'nypl_1851_1852_doggetts_007205', 'nypl_1851_1852_doggetts_007206', 'nypl_1851_1852_doggetts_007207']",0.637,['multi_match'],True
+125,2,"['nypl_1851_1852_doggetts_001365', 'nypl_1851_1852_doggetts_006557']",0.555,[],False
+126,2,"['nypl_1851_1852_doggetts_005006', 'nypl_1851_1852_doggetts_005014']",0.58,[],False
+127,4,"['nypl_1851_1852_doggetts_000391', 'nypl_1851_1852_doggetts_000402', 'nypl_1851_1852_doggetts_000406', 'nypl_1851_1852_doggetts_003896']",0.5283333333333334,['multi_match'],True
+128,3,"['nypl_1851_1852_doggetts_002826', 'nypl_1851_1852_doggetts_002833', 'nypl_1851_1852_doggetts_003103']",0.5633333333333334,['multi_match'],True
+129,5,"['nypl_1851_1852_doggetts_001704', 'nypl_1851_1852_doggetts_003567', 'nypl_1851_1852_doggetts_005042', 'nypl_1851_1852_doggetts_005091', 'nypl_1851_1852_doggetts_005987']",0.528,['multi_match'],True
+130,2,"['nypl_1851_1852_doggetts_001011', 'nypl_1851_1852_doggetts_006949']",0.555,[],False
+131,2,"['nypl_1851_1852_doggetts_003150', 'nypl_1851_1852_doggetts_003175']",0.55,['conflicting_occupation'],True
+132,2,"['nypl_1851_1852_doggetts_002713', 'nypl_1851_1852_doggetts_004166']",0.83,[],False
+133,3,"['nypl_1851_1852_doggetts_004785', 'nypl_1851_1852_doggetts_004788', 'nypl_1851_1852_doggetts_004790']",0.67,['multi_match'],True
+134,6,"['nypl_1851_1852_doggetts_002757', 'nypl_1851_1852_doggetts_002758', 'nypl_1851_1852_doggetts_002764', 'nypl_1851_1852_doggetts_002765', 'nypl_1851_1852_doggetts_002775', 'nypl_1851_1852_doggetts_003094']",0.615,"['multi_match', 'conflicting_occupation']",True
+135,6,"['nypl_1851_1852_doggetts_000531', 'nypl_1851_1852_doggetts_000534', 'nypl_1851_1852_doggetts_000535', 'nypl_1851_1852_doggetts_000537', 'nypl_1851_1852_doggetts_000539', 'nypl_1851_1852_doggetts_004025']",0.5335714285714286,['multi_match'],True
+136,2,"['nypl_1851_1852_doggetts_002479', 'nypl_1851_1852_doggetts_003463']",0.54,['conflicting_occupation'],True
+137,2,"['nypl_1851_1852_doggetts_002551', 'nypl_1851_1852_doggetts_006240']",0.515,[],False
+138,4,"['nypl_1851_1852_doggetts_002031', 'nypl_1851_1852_doggetts_002065', 'nypl_1851_1852_doggetts_004828', 'nypl_1851_1852_doggetts_006741']",0.5483333333333333,['multi_match'],True
+139,2,"['nypl_1851_1852_doggetts_000889', 'nypl_1851_1852_doggetts_002093']",0.52,[],False
+140,4,"['nypl_1851_1852_doggetts_000904', 'nypl_1851_1852_doggetts_003774', 'nypl_1851_1852_doggetts_003807', 'nypl_1851_1852_doggetts_005883']",0.52625,['multi_match'],True
+141,2,"['nypl_1851_1852_doggetts_005400', 'nypl_1851_1852_doggetts_006555']",0.52,[],False
+142,2,"['nypl_1851_1852_doggetts_001603', 'nypl_1851_1852_doggetts_001624']",0.91,['conflicting_occupation'],True
+143,2,"['nypl_1851_1852_doggetts_002080', 'nypl_1851_1852_doggetts_004837']",0.535,[],False
+144,4,"['nypl_1851_1852_doggetts_007182', 'nypl_1851_1852_doggetts_007293', 'nypl_1851_1852_doggetts_007294', 'nypl_1851_1852_doggetts_007300']",0.535,['multi_match'],True
+145,4,"['nypl_1851_1852_doggetts_001201', 'nypl_1851_1852_doggetts_001410', 'nypl_1851_1852_doggetts_005523', 'nypl_1851_1852_doggetts_005536']",0.7133333333333334,"['multi_match', 'conflicting_occupation']",True
+146,2,"['nypl_1851_1852_doggetts_003817', 'nypl_1851_1852_doggetts_005909']",0.565,[],False
+147,2,"['nypl_1851_1852_doggetts_004406', 'nypl_1851_1852_doggetts_004543']",0.54,[],False
+148,3,"['nypl_1851_1852_doggetts_007039', 'nypl_1851_1852_doggetts_007040', 'nypl_1851_1852_doggetts_007067']",0.58,['multi_match'],True
+149,2,"['nypl_1851_1852_doggetts_003594', 'nypl_1851_1852_doggetts_003595']",0.54,['conflicting_occupation'],True
+150,2,"['nypl_1851_1852_doggetts_000596', 'nypl_1851_1852_doggetts_003949']",0.57,[],False
+151,2,"['nypl_1851_1852_doggetts_001807', 'nypl_1851_1852_doggetts_001809']",0.54,[],False
+152,5,"['nypl_1851_1852_doggetts_002704', 'nypl_1851_1852_doggetts_004126', 'nypl_1851_1852_doggetts_004128', 'nypl_1851_1852_doggetts_004132', 'nypl_1851_1852_doggetts_004138']",0.5349999999999999,"['multi_match', 'conflicting_occupation']",True
+153,2,"['nypl_1851_1852_doggetts_002528', 'nypl_1851_1852_doggetts_006223']",0.54,[],False
+154,2,"['nypl_1851_1852_doggetts_002694', 'nypl_1851_1852_doggetts_002714']",0.52,[],False
+155,2,"['nypl_1851_1852_doggetts_003562', 'nypl_1851_1852_doggetts_005672']",0.73,[],False
+156,13,"['nypl_1851_1852_doggetts_003026', 'nypl_1851_1852_doggetts_003027', 'nypl_1851_1852_doggetts_003028', 'nypl_1851_1852_doggetts_003029', 'nypl_1851_1852_doggetts_003030', 'nypl_1851_1852_doggetts_003032', 'nypl_1851_1852_doggetts_003034', 'nypl_1851_1852_doggetts_003037', 'nypl_1851_1852_doggetts_003038', 'nypl_1851_1852_doggetts_003161', 'nypl_1851_1852_doggetts_003162', 'nypl_1851_1852_doggetts_003163', 'nypl_1851_1852_doggetts_003309']",0.5776666666666668,"['multi_match', 'conflicting_occupation']",True
+157,2,"['nypl_1851_1852_doggetts_001057', 'nypl_1851_1852_doggetts_006560']",0.565,[],False
+158,2,"['nypl_1851_1852_doggetts_001502', 'nypl_1851_1852_doggetts_001503']",0.555,[],False
+159,2,"['nypl_1851_1852_doggetts_001403', 'nypl_1851_1852_doggetts_006205']",0.515,[],False
+160,2,"['nypl_1851_1852_doggetts_001363', 'nypl_1851_1852_doggetts_002347']",0.52,[],False
+161,2,"['nypl_1851_1852_doggetts_001401', 'nypl_1851_1852_doggetts_006178']",0.515,[],False
+162,2,"['nypl_1851_1852_doggetts_000652', 'nypl_1851_1852_doggetts_000653']",0.985,[],False
+163,2,"['nypl_1851_1852_doggetts_006027', 'nypl_1851_1852_doggetts_006073']",0.555,[],False
+164,2,"['nypl_1851_1852_doggetts_000525', 'nypl_1851_1852_doggetts_000529']",0.52,[],False
+165,5,"['nypl_1851_1852_doggetts_002998', 'nypl_1851_1852_doggetts_002999', 'nypl_1851_1852_doggetts_003005', 'nypl_1851_1852_doggetts_003008', 'nypl_1851_1852_doggetts_003011']",0.615,"['multi_match', 'conflicting_occupation']",True
+166,2,"['nypl_1851_1852_doggetts_001646', 'nypl_1851_1852_doggetts_006537']",0.515,[],False
+167,2,"['nypl_1851_1852_doggetts_000760', 'nypl_1851_1852_doggetts_000764']",0.55,[],False
+168,2,"['nypl_1851_1852_doggetts_007876', 'nypl_1851_1852_doggetts_007877']",0.92,['conflicting_occupation'],True
+169,4,"['nypl_1851_1852_doggetts_002693', 'nypl_1851_1852_doggetts_002709', 'nypl_1851_1852_doggetts_004147', 'nypl_1851_1852_doggetts_004148']",0.6416666666666666,['multi_match'],True
+170,2,"['nypl_1851_1852_doggetts_007682', 'nypl_1851_1852_doggetts_007836']",0.555,[],False
+171,4,"['nypl_1851_1852_doggetts_005242', 'nypl_1851_1852_doggetts_005244', 'nypl_1851_1852_doggetts_005247', 'nypl_1851_1852_doggetts_005248']",0.6175,['multi_match'],True
+172,3,"['nypl_1851_1852_doggetts_000704', 'nypl_1851_1852_doggetts_000892', 'nypl_1851_1852_doggetts_000898']",0.5283333333333333,['multi_match'],True
+173,2,"['nypl_1851_1852_doggetts_002494', 'nypl_1851_1852_doggetts_002577']",0.505,['conflicting_occupation'],True
+174,2,"['nypl_1851_1852_doggetts_002781', 'nypl_1851_1852_doggetts_003068']",0.52,[],False
+175,2,"['nypl_1851_1852_doggetts_000405', 'nypl_1851_1852_doggetts_003903']",0.555,[],False
+176,4,"['nypl_1851_1852_doggetts_001146', 'nypl_1851_1852_doggetts_001151', 'nypl_1851_1852_doggetts_001409', 'nypl_1851_1852_doggetts_006399']",0.5316666666666666,"['multi_match', 'conflicting_occupation']",True
+177,4,"['nypl_1851_1852_doggetts_000737', 'nypl_1851_1852_doggetts_000738', 'nypl_1851_1852_doggetts_000756', 'nypl_1851_1852_doggetts_000769']",0.535,['multi_match'],True
+178,4,"['nypl_1851_1852_doggetts_001685', 'nypl_1851_1852_doggetts_001686', 'nypl_1851_1852_doggetts_003560', 'nypl_1851_1852_doggetts_005074']",0.6416666666666666,"['multi_match', 'conflicting_occupation']",True
+179,3,"['nypl_1851_1852_doggetts_001395', 'nypl_1851_1852_doggetts_001984', 'nypl_1851_1852_doggetts_006611']",0.5283333333333333,['multi_match'],True
+180,2,"['nypl_1851_1852_doggetts_005044', 'nypl_1851_1852_doggetts_005093']",0.94,[],False
+181,2,"['nypl_1851_1852_doggetts_002247', 'nypl_1851_1852_doggetts_005975']",0.56,['conflicting_occupation'],True
+182,3,"['nypl_1851_1852_doggetts_001009', 'nypl_1851_1852_doggetts_002344', 'nypl_1851_1852_doggetts_006939']",0.515,['multi_match'],True
+183,3,"['nypl_1851_1852_doggetts_003330', 'nypl_1851_1852_doggetts_003331', 'nypl_1851_1852_doggetts_003332']",0.5975,['multi_match'],True
+184,3,"['nypl_1851_1852_doggetts_000454', 'nypl_1851_1852_doggetts_006006', 'nypl_1851_1852_doggetts_006394']",0.5175000000000001,['multi_match'],True
+185,2,"['nypl_1851_1852_doggetts_007925', 'nypl_1851_1852_doggetts_007926']",0.52,[],False
+186,2,"['nypl_1851_1852_doggetts_000789', 'nypl_1851_1852_doggetts_000790']",0.55,[],False
+187,2,"['nypl_1851_1852_doggetts_001182', 'nypl_1851_1852_doggetts_005649']",0.57,[],False
+188,4,"['nypl_1851_1852_doggetts_002612', 'nypl_1851_1852_doggetts_006410', 'nypl_1851_1852_doggetts_006417', 'nypl_1851_1852_doggetts_006436']",0.6866666666666665,"['multi_match', 'conflicting_occupation']",True
+189,2,"['nypl_1851_1852_doggetts_007158', 'nypl_1851_1852_doggetts_007159']",0.515,[],False
+190,2,"['nypl_1851_1852_doggetts_001497', 'nypl_1851_1852_doggetts_001501']",0.515,[],False
+191,2,"['nypl_1851_1852_doggetts_005411', 'nypl_1851_1852_doggetts_005416']",0.52,[],False
+192,3,"['nypl_1851_1852_doggetts_001474', 'nypl_1851_1852_doggetts_001475', 'nypl_1851_1852_doggetts_006169']",0.5483333333333333,['multi_match'],True
+193,2,"['nypl_1851_1852_doggetts_000409', 'nypl_1851_1852_doggetts_003820']",0.675,['conflicting_occupation'],True
+194,2,"['nypl_1851_1852_doggetts_000685', 'nypl_1851_1852_doggetts_000840']",0.58,[],False
+195,2,"['nypl_1851_1852_doggetts_003557', 'nypl_1851_1852_doggetts_003558']",0.555,[],False
+196,2,"['nypl_1851_1852_doggetts_006467', 'nypl_1851_1852_doggetts_006468']",0.515,[],False
+197,2,"['nypl_1851_1852_doggetts_007185', 'nypl_1851_1852_doggetts_007188']",0.555,[],False
+198,2,"['nypl_1851_1852_doggetts_000291', 'nypl_1851_1852_doggetts_000292']",0.535,[],False
+199,2,"['nypl_1851_1852_doggetts_000499', 'nypl_1851_1852_doggetts_002691']",0.53,[],False
+200,2,"['nypl_1851_1852_doggetts_000605', 'nypl_1851_1852_doggetts_004280']",1.0,[],False
+201,4,"['nypl_1851_1852_doggetts_002887', 'nypl_1851_1852_doggetts_002928', 'nypl_1851_1852_doggetts_002934', 'nypl_1851_1852_doggetts_003127']",0.618,['multi_match'],True
+202,3,"['nypl_1851_1852_doggetts_007734', 'nypl_1851_1852_doggetts_007735', 'nypl_1851_1852_doggetts_007736']",0.5366666666666667,['multi_match'],True
+203,2,"['nypl_1851_1852_doggetts_001405', 'nypl_1851_1852_doggetts_001406']",0.76,[],False
+204,2,"['nypl_1851_1852_doggetts_001087', 'nypl_1851_1852_doggetts_002210']",0.52,[],False
+205,2,"['nypl_1851_1852_doggetts_002837', 'nypl_1851_1852_doggetts_003065']",0.94,[],False
+206,2,"['nypl_1851_1852_doggetts_007487', 'nypl_1851_1852_doggetts_007500']",0.54,['conflicting_occupation'],True
+207,2,"['nypl_1851_1852_doggetts_002963', 'nypl_1851_1852_doggetts_002968']",0.555,[],False
+208,15,"['nypl_1851_1852_doggetts_006754', 'nypl_1851_1852_doggetts_006756', 'nypl_1851_1852_doggetts_006787', 'nypl_1851_1852_doggetts_006790', 'nypl_1851_1852_doggetts_006791', 'nypl_1851_1852_doggetts_006792', 'nypl_1851_1852_doggetts_006797', 'nypl_1851_1852_doggetts_006800', 'nypl_1851_1852_doggetts_006806', 'nypl_1851_1852_doggetts_006807', 'nypl_1851_1852_doggetts_006809', 'nypl_1851_1852_doggetts_006810', 'nypl_1851_1852_doggetts_006814', 'nypl_1851_1852_doggetts_006820', 'nypl_1851_1852_doggetts_006822']",0.5591666666666666,"['multi_match', 'conflicting_occupation']",True
+209,2,"['nypl_1851_1852_doggetts_007974', 'nypl_1851_1852_doggetts_007976']",0.545,['conflicting_occupation'],True
+210,2,"['nypl_1851_1852_doggetts_003046', 'nypl_1851_1852_doggetts_003053']",0.58,[],False
+211,2,"['nypl_1851_1852_doggetts_000468', 'nypl_1851_1852_doggetts_000469']",0.625,[],False
+212,2,"['nypl_1851_1852_doggetts_001534', 'nypl_1851_1852_doggetts_006510']",0.54,[],False
+213,3,"['nypl_1851_1852_doggetts_006778', 'nypl_1851_1852_doggetts_006811', 'nypl_1851_1852_doggetts_006823']",0.635,['multi_match'],True
+214,2,"['nypl_1851_1852_doggetts_001862', 'nypl_1851_1852_doggetts_005008']",0.54,['conflicting_occupation'],True
+215,4,"['nypl_1851_1852_doggetts_003534', 'nypl_1851_1852_doggetts_003540', 'nypl_1851_1852_doggetts_003548', 'nypl_1851_1852_doggetts_003551']",0.64375,['multi_match'],True
+216,3,"['nypl_1851_1852_doggetts_004456', 'nypl_1851_1852_doggetts_004457', 'nypl_1851_1852_doggetts_004669']",0.7966666666666665,['multi_match'],True
+217,2,"['nypl_1851_1852_doggetts_004370', 'nypl_1851_1852_doggetts_004615']",0.545,[],False
+218,2,"['nypl_1851_1852_doggetts_005055', 'nypl_1851_1852_doggetts_005963']",0.555,[],False
+219,2,"['nypl_1851_1852_doggetts_004770', 'nypl_1851_1852_doggetts_004876']",0.51,['conflicting_occupation'],True
+220,2,"['nypl_1851_1852_doggetts_001366', 'nypl_1851_1852_doggetts_006943']",0.52,[],False
+221,4,"['nypl_1851_1852_doggetts_002793', 'nypl_1851_1852_doggetts_002795', 'nypl_1851_1852_doggetts_002799', 'nypl_1851_1852_doggetts_002802']",0.6066666666666668,"['multi_match', 'conflicting_occupation']",True
+222,2,"['nypl_1851_1852_doggetts_005278', 'nypl_1851_1852_doggetts_005279']",0.755,[],False
+223,2,"['nypl_1851_1852_doggetts_004508', 'nypl_1851_1852_doggetts_004513']",0.515,[],False
+224,2,"['nypl_1851_1852_doggetts_005337', 'nypl_1851_1852_doggetts_006883']",0.52,[],False
+225,3,"['nypl_1851_1852_doggetts_002994', 'nypl_1851_1852_doggetts_003151', 'nypl_1851_1852_doggetts_003152']",0.5283333333333333,"['multi_match', 'conflicting_address']",True
+226,2,"['nypl_1851_1852_doggetts_007593', 'nypl_1851_1852_doggetts_007598']",0.715,[],False
+227,2,"['nypl_1851_1852_doggetts_005388', 'nypl_1851_1852_doggetts_005615']",0.535,[],False
+228,2,"['nypl_1851_1852_doggetts_003832', 'nypl_1851_1852_doggetts_003833']",0.525,[],False
+229,8,"['nypl_1851_1852_doggetts_000558', 'nypl_1851_1852_doggetts_000560', 'nypl_1851_1852_doggetts_000574', 'nypl_1851_1852_doggetts_002719', 'nypl_1851_1852_doggetts_003841', 'nypl_1851_1852_doggetts_003962', 'nypl_1851_1852_doggetts_003963', 'nypl_1851_1852_doggetts_006956']",0.545,['multi_match'],True
+230,8,"['nypl_1851_1852_doggetts_002983', 'nypl_1851_1852_doggetts_002985', 'nypl_1851_1852_doggetts_002986', 'nypl_1851_1852_doggetts_002987', 'nypl_1851_1852_doggetts_002989', 'nypl_1851_1852_doggetts_003145', 'nypl_1851_1852_doggetts_003147', 'nypl_1851_1852_doggetts_003148']",0.5580357142857143,['multi_match'],True
+231,2,"['nypl_1851_1852_doggetts_003640', 'nypl_1851_1852_doggetts_003641']",0.655,[],False
+232,2,"['nypl_1851_1852_doggetts_001247', 'nypl_1851_1852_doggetts_001248']",0.58,[],False
+233,2,"['nypl_1851_1852_doggetts_003230', 'nypl_1851_1852_doggetts_004253']",0.91,['conflicting_occupation'],True
+234,2,"['nypl_1851_1852_doggetts_002807', 'nypl_1851_1852_doggetts_002816']",0.52,[],False
+235,3,"['nypl_1851_1852_doggetts_000361', 'nypl_1851_1852_doggetts_003610', 'nypl_1851_1852_doggetts_005740']",0.635,"['multi_match', 'conflicting_occupation']",True
+236,2,"['nypl_1851_1852_doggetts_001981', 'nypl_1851_1852_doggetts_001983']",0.94,[],False
+237,3,"['nypl_1851_1852_doggetts_007754', 'nypl_1851_1852_doggetts_007757', 'nypl_1851_1852_doggetts_007856']",0.7375,['multi_match'],True
+238,2,"['nypl_1851_1852_doggetts_004795', 'nypl_1851_1852_doggetts_004798']",0.555,[],False
+239,2,"['nypl_1851_1852_doggetts_004149', 'nypl_1851_1852_doggetts_004153']",0.515,[],False
+240,3,"['nypl_1851_1852_doggetts_003087', 'nypl_1851_1852_doggetts_003089', 'nypl_1851_1852_doggetts_003385']",0.5566666666666668,['multi_match'],True
+241,2,"['nypl_1851_1852_doggetts_007669', 'nypl_1851_1852_doggetts_007674']",0.52,[],False
+242,2,"['nypl_1851_1852_doggetts_007714', 'nypl_1851_1852_doggetts_007854']",0.94,[],False
+243,5,"['nypl_1851_1852_doggetts_001026', 'nypl_1851_1852_doggetts_001656', 'nypl_1851_1852_doggetts_005312', 'nypl_1851_1852_doggetts_006548', 'nypl_1851_1852_doggetts_006942']",0.5309999999999999,['multi_match'],True
+244,2,"['nypl_1851_1852_doggetts_005054', 'nypl_1851_1852_doggetts_005057']",0.75,[],False
+245,2,"['nypl_1851_1852_doggetts_006321', 'nypl_1851_1852_doggetts_006409']",0.65,[],False
+246,2,"['nypl_1851_1852_doggetts_005777', 'nypl_1851_1852_doggetts_005778']",0.555,[],False
+247,3,"['nypl_1851_1852_doggetts_000375', 'nypl_1851_1852_doggetts_005158', 'nypl_1851_1852_doggetts_005160']",0.545,['multi_match'],True
+248,2,"['nypl_1851_1852_doggetts_006009', 'nypl_1851_1852_doggetts_006104']",0.535,[],False
+249,3,"['nypl_1851_1852_doggetts_004638', 'nypl_1851_1852_doggetts_004662', 'nypl_1851_1852_doggetts_004732']",0.53,['multi_match'],True
+250,2,"['nypl_1851_1852_doggetts_001616', 'nypl_1851_1852_doggetts_005827']",0.545,[],False
+251,3,"['nypl_1851_1852_doggetts_006042', 'nypl_1851_1852_doggetts_006047', 'nypl_1851_1852_doggetts_006048']",0.6950000000000001,"['multi_match', 'conflicting_occupation']",True
+252,2,"['nypl_1851_1852_doggetts_005379', 'nypl_1851_1852_doggetts_007012']",0.52,[],False
+253,2,"['nypl_1851_1852_doggetts_001541', 'nypl_1851_1852_doggetts_002557']",0.545,[],False
+254,2,"['nypl_1851_1852_doggetts_007872', 'nypl_1851_1852_doggetts_007873']",0.555,[],False
+255,2,"['nypl_1851_1852_doggetts_001199', 'nypl_1851_1852_doggetts_001200']",0.755,[],False
+256,3,"['nypl_1851_1852_doggetts_002923', 'nypl_1851_1852_doggetts_005579', 'nypl_1851_1852_doggetts_005599']",0.5216666666666666,['multi_match'],True
+257,2,"['nypl_1851_1852_doggetts_003061', 'nypl_1851_1852_doggetts_003062']",0.545,[],False
+258,2,"['nypl_1851_1852_doggetts_002665', 'nypl_1851_1852_doggetts_005961']",0.515,[],False
+259,2,"['nypl_1851_1852_doggetts_002487', 'nypl_1851_1852_doggetts_002488']",0.56,[],False
+260,2,"['nypl_1851_1852_doggetts_001561', 'nypl_1851_1852_doggetts_001562']",0.55,[],False
+261,2,"['nypl_1851_1852_doggetts_001839', 'nypl_1851_1852_doggetts_001840']",0.515,[],False
+262,2,"['nypl_1851_1852_doggetts_007391', 'nypl_1851_1852_doggetts_007396']",0.515,[],False
+263,2,"['nypl_1851_1852_doggetts_004009', 'nypl_1851_1852_doggetts_004221']",0.52,[],False
+264,2,"['nypl_1851_1852_doggetts_004673', 'nypl_1851_1852_doggetts_004749']",0.515,[],False
+265,3,"['nypl_1851_1852_doggetts_003004', 'nypl_1851_1852_doggetts_003006', 'nypl_1851_1852_doggetts_003153']",0.5475000000000001,['multi_match'],True
+266,2,"['nypl_1851_1852_doggetts_005479', 'nypl_1851_1852_doggetts_005487']",0.565,[],False
+267,3,"['nypl_1851_1852_doggetts_001309', 'nypl_1851_1852_doggetts_001312', 'nypl_1851_1852_doggetts_001612']",0.5675,['multi_match'],True
+268,3,"['nypl_1851_1852_doggetts_005365', 'nypl_1851_1852_doggetts_005366', 'nypl_1851_1852_doggetts_005367']",0.525,['multi_match'],True
+269,5,"['nypl_1851_1852_doggetts_004505', 'nypl_1851_1852_doggetts_004511', 'nypl_1851_1852_doggetts_004514', 'nypl_1851_1852_doggetts_004515', 'nypl_1851_1852_doggetts_004517']",0.545,['multi_match'],True
+270,3,"['nypl_1851_1852_doggetts_000746', 'nypl_1851_1852_doggetts_000757', 'nypl_1851_1852_doggetts_000758']",0.6566666666666667,['multi_match'],True
+271,2,"['nypl_1851_1852_doggetts_002629', 'nypl_1851_1852_doggetts_006484']",0.555,[],False
+272,2,"['nypl_1851_1852_doggetts_000066', 'nypl_1851_1852_doggetts_000143']",0.94,[],False
+273,2,"['nypl_1851_1852_doggetts_003202', 'nypl_1851_1852_doggetts_005801']",0.52,[],False
+274,4,"['nypl_1851_1852_doggetts_000450', 'nypl_1851_1852_doggetts_001163', 'nypl_1851_1852_doggetts_006235', 'nypl_1851_1852_doggetts_006392']",0.61375,['multi_match'],True
+275,4,"['nypl_1851_1852_doggetts_001772', 'nypl_1851_1852_doggetts_004507', 'nypl_1851_1852_doggetts_004512', 'nypl_1851_1852_doggetts_004516']",0.6666666666666666,['multi_match'],True
+276,2,"['nypl_1851_1852_doggetts_003013', 'nypl_1851_1852_doggetts_003017']",1.0,[],False
+277,2,"['nypl_1851_1852_doggetts_000417', 'nypl_1851_1852_doggetts_003773']",0.52,[],False
+278,2,"['nypl_1851_1852_doggetts_001384', 'nypl_1851_1852_doggetts_006180']",0.54,[],False
+279,2,"['nypl_1851_1852_doggetts_003660', 'nypl_1851_1852_doggetts_005145']",0.54,[],False
+280,2,"['nypl_1851_1852_doggetts_003054', 'nypl_1851_1852_doggetts_003056']",0.515,[],False
+281,2,"['nypl_1851_1852_doggetts_000487', 'nypl_1851_1852_doggetts_000488']",0.555,[],False
+282,3,"['nypl_1851_1852_doggetts_004242', 'nypl_1851_1852_doggetts_004243', 'nypl_1851_1852_doggetts_004257']",0.7583333333333334,['multi_match'],True
+283,2,"['nypl_1851_1852_doggetts_001570', 'nypl_1851_1852_doggetts_001576']",0.515,[],False
+284,2,"['nypl_1851_1852_doggetts_004397', 'nypl_1851_1852_doggetts_004398']",0.555,[],False
+285,2,"['nypl_1851_1852_doggetts_000731', 'nypl_1851_1852_doggetts_000732']",0.52,[],False
+286,2,"['nypl_1851_1852_doggetts_004780', 'nypl_1851_1852_doggetts_004783']",0.565,['conflicting_occupation'],True
+287,2,"['nypl_1851_1852_doggetts_001072', 'nypl_1851_1852_doggetts_001076']",0.555,[],False
+288,2,"['nypl_1851_1852_doggetts_007002', 'nypl_1851_1852_doggetts_007003']",0.54,[],False
+289,2,"['nypl_1851_1852_doggetts_005584', 'nypl_1851_1852_doggetts_006408']",0.515,[],False
+290,2,"['nypl_1851_1852_doggetts_001547', 'nypl_1851_1852_doggetts_001549']",0.52,[],False
+291,3,"['nypl_1851_1852_doggetts_007222', 'nypl_1851_1852_doggetts_007223', 'nypl_1851_1852_doggetts_007227']",0.54,['multi_match'],True
+292,5,"['nypl_1851_1852_doggetts_003168', 'nypl_1851_1852_doggetts_003169', 'nypl_1851_1852_doggetts_003170', 'nypl_1851_1852_doggetts_003171', 'nypl_1851_1852_doggetts_003186']",0.63125,"['multi_match', 'conflicting_occupation']",True
+293,2,"['nypl_1851_1852_doggetts_007769', 'nypl_1851_1852_doggetts_007772']",0.565,[],False
+294,2,"['nypl_1851_1852_doggetts_002865', 'nypl_1851_1852_doggetts_002870']",0.515,[],False
+295,6,"['nypl_1851_1852_doggetts_000252', 'nypl_1851_1852_doggetts_000254', 'nypl_1851_1852_doggetts_000261', 'nypl_1851_1852_doggetts_000262', 'nypl_1851_1852_doggetts_000263', 'nypl_1851_1852_doggetts_000264']",0.5381250000000001,['multi_match'],True
+296,2,"['nypl_1851_1852_doggetts_001932', 'nypl_1851_1852_doggetts_001935']",0.525,['conflicting_occupation'],True
+297,2,"['nypl_1851_1852_doggetts_001034', 'nypl_1851_1852_doggetts_001041']",0.94,[],False
+298,3,"['nypl_1851_1852_doggetts_003787', 'nypl_1851_1852_doggetts_003790', 'nypl_1851_1852_doggetts_003813']",0.5975,['multi_match'],True
+299,2,"['nypl_1851_1852_doggetts_002447', 'nypl_1851_1852_doggetts_004939']",0.555,[],False
+300,2,"['nypl_1851_1852_doggetts_004937', 'nypl_1851_1852_doggetts_004961']",0.94,[],False
+301,2,"['nypl_1851_1852_doggetts_007646', 'nypl_1851_1852_doggetts_007649']",0.54,[],False
+302,2,"['nypl_1851_1852_doggetts_003408', 'nypl_1851_1852_doggetts_003686']",0.525,['conflicting_occupation'],True
+303,2,"['nypl_1851_1852_doggetts_002797', 'nypl_1851_1852_doggetts_003071']",0.535,[],False
+304,2,"['nypl_1851_1852_doggetts_005172', 'nypl_1851_1852_doggetts_005177']",0.55,[],False
+305,2,"['nypl_1851_1852_doggetts_001387', 'nypl_1851_1852_doggetts_006214']",0.555,[],False
+306,2,"['nypl_1851_1852_doggetts_004806', 'nypl_1851_1852_doggetts_004807']",0.555,[],False
+307,2,"['nypl_1851_1852_doggetts_001450', 'nypl_1851_1852_doggetts_001454']",0.555,[],False
+308,2,"['nypl_1851_1852_doggetts_006261', 'nypl_1851_1852_doggetts_006951']",0.52,[],False
+309,3,"['nypl_1851_1852_doggetts_006785', 'nypl_1851_1852_doggetts_006794', 'nypl_1851_1852_doggetts_006819']",0.6766666666666667,['multi_match'],True
+310,3,"['nypl_1851_1852_doggetts_002541', 'nypl_1851_1852_doggetts_002542', 'nypl_1851_1852_doggetts_002543']",0.5616666666666666,['multi_match'],True
+311,2,"['nypl_1851_1852_doggetts_002914', 'nypl_1851_1852_doggetts_006524']",0.58,[],False
+312,2,"['nypl_1851_1852_doggetts_005395', 'nypl_1851_1852_doggetts_005396']",0.52,[],False
+313,2,"['nypl_1851_1852_doggetts_002582', 'nypl_1851_1852_doggetts_002584']",0.545,[],False
+314,5,"['nypl_1851_1852_doggetts_000793', 'nypl_1851_1852_doggetts_000795', 'nypl_1851_1852_doggetts_000797', 'nypl_1851_1852_doggetts_000798', 'nypl_1851_1852_doggetts_006842']",0.5428571428571428,['multi_match'],True
+315,2,"['nypl_1851_1852_doggetts_005164', 'nypl_1851_1852_doggetts_005166']",0.515,[],False
+316,2,"['nypl_1851_1852_doggetts_003451', 'nypl_1851_1852_doggetts_003455']",0.585,[],False
+317,3,"['nypl_1851_1852_doggetts_005473', 'nypl_1851_1852_doggetts_005484', 'nypl_1851_1852_doggetts_005490']",0.5275000000000001,['multi_match'],True
+318,2,"['nypl_1851_1852_doggetts_002459', 'nypl_1851_1852_doggetts_004519']",0.555,[],False
+319,2,"['nypl_1851_1852_doggetts_002976', 'nypl_1851_1852_doggetts_002977']",0.515,[],False
+320,2,"['nypl_1851_1852_doggetts_007297', 'nypl_1851_1852_doggetts_007301']",0.965,[],False
+321,2,"['nypl_1851_1852_doggetts_007875', 'nypl_1851_1852_doggetts_007881']",0.52,[],False
+322,3,"['nypl_1851_1852_doggetts_002960', 'nypl_1851_1852_doggetts_002967', 'nypl_1851_1852_doggetts_003136']",0.54,['multi_match'],True
+323,4,"['nypl_1851_1852_doggetts_002899', 'nypl_1851_1852_doggetts_002907', 'nypl_1851_1852_doggetts_002920', 'nypl_1851_1852_doggetts_003125']",0.5416666666666667,['multi_match'],True
+324,2,"['nypl_1851_1852_doggetts_001468', 'nypl_1851_1852_doggetts_006876']",0.52,[],False
+325,2,"['nypl_1851_1852_doggetts_006143', 'nypl_1851_1852_doggetts_006144']",0.52,[],False
+326,2,"['nypl_1851_1852_doggetts_001331', 'nypl_1851_1852_doggetts_006554']",0.525,['conflicting_occupation'],True
+327,2,"['nypl_1851_1852_doggetts_003066', 'nypl_1851_1852_doggetts_003067']",0.56,[],False
+328,4,"['nypl_1851_1852_doggetts_002536', 'nypl_1851_1852_doggetts_002569', 'nypl_1851_1852_doggetts_002586', 'nypl_1851_1852_doggetts_005613']",0.52,['multi_match'],True
+329,2,"['nypl_1851_1852_doggetts_001951', 'nypl_1851_1852_doggetts_003666']",0.535,[],False
+330,2,"['nypl_1851_1852_doggetts_003900', 'nypl_1851_1852_doggetts_003902']",0.525,[],False
+331,9,"['nypl_1851_1852_doggetts_001050', 'nypl_1851_1852_doggetts_001480', 'nypl_1851_1852_doggetts_001481', 'nypl_1851_1852_doggetts_001483', 'nypl_1851_1852_doggetts_001484', 'nypl_1851_1852_doggetts_001491', 'nypl_1851_1852_doggetts_006591', 'nypl_1851_1852_doggetts_006592', 'nypl_1851_1852_doggetts_006594']",0.5523333333333335,['multi_match'],True
+332,3,"['nypl_1851_1852_doggetts_005433', 'nypl_1851_1852_doggetts_005434', 'nypl_1851_1852_doggetts_005436']",0.6174999999999999,['multi_match'],True
+333,3,"['nypl_1851_1852_doggetts_006761', 'nypl_1851_1852_doggetts_006833', 'nypl_1851_1852_doggetts_006843']",0.5525,['multi_match'],True
+334,2,"['nypl_1851_1852_doggetts_005378', 'nypl_1851_1852_doggetts_005382']",0.57,[],False
+335,2,"['nypl_1851_1852_doggetts_002710', 'nypl_1851_1852_doggetts_004146']",0.52,[],False
+336,2,"['nypl_1851_1852_doggetts_004887', 'nypl_1851_1852_doggetts_004888']",0.52,[],False
+337,2,"['nypl_1851_1852_doggetts_005531', 'nypl_1851_1852_doggetts_005556']",0.505,['conflicting_occupation'],True
+338,2,"['nypl_1851_1852_doggetts_002838', 'nypl_1851_1852_doggetts_002840']",0.58,[],False
+339,4,"['nypl_1851_1852_doggetts_007565', 'nypl_1851_1852_doggetts_007969', 'nypl_1851_1852_doggetts_007972', 'nypl_1851_1852_doggetts_007977']",0.5333333333333333,"['multi_match', 'conflicting_occupation']",True
+340,2,"['nypl_1851_1852_doggetts_002266', 'nypl_1851_1852_doggetts_005621']",0.565,[],False
+341,2,"['nypl_1851_1852_doggetts_002845', 'nypl_1851_1852_doggetts_002857']",0.545,[],False
+342,4,"['nypl_1851_1852_doggetts_000996', 'nypl_1851_1852_doggetts_000997', 'nypl_1851_1852_doggetts_001640', 'nypl_1851_1852_doggetts_006132']",0.53875,['multi_match'],True
+343,2,"['nypl_1851_1852_doggetts_000267', 'nypl_1851_1852_doggetts_000270']",0.555,[],False
+344,2,"['nypl_1851_1852_doggetts_003051', 'nypl_1851_1852_doggetts_003059']",0.625,[],False
+345,2,"['nypl_1851_1852_doggetts_002979', 'nypl_1851_1852_doggetts_002990']",0.68,[],False
+346,2,"['nypl_1851_1852_doggetts_003237', 'nypl_1851_1852_doggetts_003307']",0.555,[],False
+347,2,"['nypl_1851_1852_doggetts_000949', 'nypl_1851_1852_doggetts_000961']",0.575,[],False
+348,2,"['nypl_1851_1852_doggetts_000563', 'nypl_1851_1852_doggetts_005797']",0.54,[],False
+349,2,"['nypl_1851_1852_doggetts_001552', 'nypl_1851_1852_doggetts_002234']",0.625,[],False
+350,2,"['nypl_1851_1852_doggetts_005384', 'nypl_1851_1852_doggetts_005820']",0.515,[],False
+351,4,"['nypl_1851_1852_doggetts_003207', 'nypl_1851_1852_doggetts_003213', 'nypl_1851_1852_doggetts_003214', 'nypl_1851_1852_doggetts_003433']",0.5941666666666666,['multi_match'],True
+352,2,"['nypl_1851_1852_doggetts_004165', 'nypl_1851_1852_doggetts_004188']",0.94,[],False
+353,2,"['nypl_1851_1852_doggetts_001670', 'nypl_1851_1852_doggetts_004969']",0.555,[],False
+354,3,"['nypl_1851_1852_doggetts_007020', 'nypl_1851_1852_doggetts_007022', 'nypl_1851_1852_doggetts_007024']",0.5933333333333334,['multi_match'],True
+355,2,"['nypl_1851_1852_doggetts_000723', 'nypl_1851_1852_doggetts_000725']",0.67,[],False
+356,2,"['nypl_1851_1852_doggetts_000807', 'nypl_1851_1852_doggetts_000809']",0.555,[],False
+357,2,"['nypl_1851_1852_doggetts_005157', 'nypl_1851_1852_doggetts_005226']",0.625,[],False
+358,2,"['nypl_1851_1852_doggetts_002405', 'nypl_1851_1852_doggetts_002407']",0.88,[],False
+359,2,"['nypl_1851_1852_doggetts_005491', 'nypl_1851_1852_doggetts_005553']",0.66,[],False
+360,2,"['nypl_1851_1852_doggetts_003894', 'nypl_1851_1852_doggetts_003899']",0.58,[],False
+361,2,"['nypl_1851_1852_doggetts_005981', 'nypl_1851_1852_doggetts_005984']",0.58,[],False
+362,2,"['nypl_1851_1852_doggetts_005239', 'nypl_1851_1852_doggetts_005249']",0.54,[],False
+363,2,"['nypl_1851_1852_doggetts_006747', 'nypl_1851_1852_doggetts_006803']",0.54,[],False
+364,2,"['nypl_1851_1852_doggetts_004766', 'nypl_1851_1852_doggetts_004767']",0.57,[],False
+365,3,"['nypl_1851_1852_doggetts_001688', 'nypl_1851_1852_doggetts_004983', 'nypl_1851_1852_doggetts_004984']",0.5275000000000001,['multi_match'],True
+366,2,"['nypl_1851_1852_doggetts_002957', 'nypl_1851_1852_doggetts_002959']",0.555,[],False
+367,3,"['nypl_1851_1852_doggetts_006540', 'nypl_1851_1852_doggetts_006544', 'nypl_1851_1852_doggetts_006937']",0.55,['multi_match'],True
+368,2,"['nypl_1851_1852_doggetts_001372', 'nypl_1851_1852_doggetts_005610']",0.555,[],False
+369,3,"['nypl_1851_1852_doggetts_004787', 'nypl_1851_1852_doggetts_004883', 'nypl_1851_1852_doggetts_004884']",0.5566666666666666,['multi_match'],True
+370,2,"['nypl_1851_1852_doggetts_001196', 'nypl_1851_1852_doggetts_005652']",0.765,[],False
+371,2,"['nypl_1851_1852_doggetts_003694', 'nypl_1851_1852_doggetts_003696']",0.545,[],False
+372,2,"['nypl_1851_1852_doggetts_003289', 'nypl_1851_1852_doggetts_003936']",0.525,['conflicting_occupation'],True
+373,2,"['nypl_1851_1852_doggetts_002621', 'nypl_1851_1852_doggetts_006497']",0.565,[],False
+374,2,"['nypl_1851_1852_doggetts_000841', 'nypl_1851_1852_doggetts_000842']",0.54,[],False
+375,2,"['nypl_1851_1852_doggetts_005372', 'nypl_1851_1852_doggetts_006996']",0.72,[],False
+376,2,"['nypl_1851_1852_doggetts_001221', 'nypl_1851_1852_doggetts_001225']",0.52,[],False
+377,2,"['nypl_1851_1852_doggetts_005934', 'nypl_1851_1852_doggetts_005935']",0.925,[],False
+378,2,"['nypl_1851_1852_doggetts_001237', 'nypl_1851_1852_doggetts_001239']",0.545,[],False
+379,2,"['nypl_1851_1852_doggetts_001127', 'nypl_1851_1852_doggetts_001154']",0.54,[],False
+380,2,"['nypl_1851_1852_doggetts_001705', 'nypl_1851_1852_doggetts_002246']",0.545,[],False
+381,3,"['nypl_1851_1852_doggetts_000884', 'nypl_1851_1852_doggetts_004265', 'nypl_1851_1852_doggetts_005882']",0.5325,['multi_match'],True
+382,2,"['nypl_1851_1852_doggetts_005061', 'nypl_1851_1852_doggetts_005064']",0.58,[],False
+383,3,"['nypl_1851_1852_doggetts_002978', 'nypl_1851_1852_doggetts_002980', 'nypl_1851_1852_doggetts_002997']",0.6616666666666666,['multi_match'],True
+384,2,"['nypl_1851_1852_doggetts_003968', 'nypl_1851_1852_doggetts_003969']",0.555,[],False
+385,2,"['nypl_1851_1852_doggetts_001089', 'nypl_1851_1852_doggetts_001105']",0.555,[],False
+386,2,"['nypl_1851_1852_doggetts_000695', 'nypl_1851_1852_doggetts_000701']",0.54,[],False
+387,2,"['nypl_1851_1852_doggetts_005759', 'nypl_1851_1852_doggetts_005761']",0.725,[],False
+388,3,"['nypl_1851_1852_doggetts_003088', 'nypl_1851_1852_doggetts_003164', 'nypl_1851_1852_doggetts_003187']",0.5316666666666667,['multi_match'],True
+389,2,"['nypl_1851_1852_doggetts_003215', 'nypl_1851_1852_doggetts_003216']",0.535,[],False
+390,2,"['nypl_1851_1852_doggetts_007726', 'nypl_1851_1852_doggetts_007728']",0.555,[],False
+391,2,"['nypl_1851_1852_doggetts_006010', 'nypl_1851_1852_doggetts_006012']",0.925,[],False
+392,2,"['nypl_1851_1852_doggetts_000742', 'nypl_1851_1852_doggetts_000749']",0.56,[],False
+393,2,"['nypl_1851_1852_doggetts_003291', 'nypl_1851_1852_doggetts_003961']",0.52,[],False
+394,2,"['nypl_1851_1852_doggetts_002794', 'nypl_1851_1852_doggetts_003064']",0.555,[],False
+395,2,"['nypl_1851_1852_doggetts_005841', 'nypl_1851_1852_doggetts_007055']",0.515,[],False
+396,3,"['nypl_1851_1852_doggetts_006427', 'nypl_1851_1852_doggetts_006607', 'nypl_1851_1852_doggetts_006608']",0.5700000000000001,['multi_match'],True
+397,2,"['nypl_1851_1852_doggetts_000370', 'nypl_1851_1852_doggetts_005940']",0.54,[],False
+398,2,"['nypl_1851_1852_doggetts_000822', 'nypl_1851_1852_doggetts_000846']",0.555,[],False
+399,2,"['nypl_1851_1852_doggetts_007098', 'nypl_1851_1852_doggetts_007101']",0.525,[],False
+400,2,"['nypl_1851_1852_doggetts_000345', 'nypl_1851_1852_doggetts_000362']",0.54,[],False
+401,2,"['nypl_1851_1852_doggetts_006168', 'nypl_1851_1852_doggetts_006566']",0.52,[],False
+402,2,"['nypl_1851_1852_doggetts_002670', 'nypl_1851_1852_doggetts_004981']",0.625,[],False
+403,2,"['nypl_1851_1852_doggetts_005498', 'nypl_1851_1852_doggetts_005501']",0.705,['conflicting_occupation'],True
+404,3,"['nypl_1851_1852_doggetts_001442', 'nypl_1851_1852_doggetts_005527', 'nypl_1851_1852_doggetts_005542']",0.5566666666666666,"['multi_match', 'conflicting_occupation']",True
+405,4,"['nypl_1851_1852_doggetts_001308', 'nypl_1851_1852_doggetts_001317', 'nypl_1851_1852_doggetts_001318', 'nypl_1851_1852_doggetts_001320']",0.5983333333333334,['multi_match'],True
+406,2,"['nypl_1851_1852_doggetts_000827', 'nypl_1851_1852_doggetts_000836']",0.56,[],False
+407,2,"['nypl_1851_1852_doggetts_000076', 'nypl_1851_1852_doggetts_000095']",0.58,[],False
+408,2,"['nypl_1851_1852_doggetts_003223', 'nypl_1851_1852_doggetts_003426']",0.575,[],False
+409,2,"['nypl_1851_1852_doggetts_004095', 'nypl_1851_1852_doggetts_004096']",0.525,['conflicting_occupation'],True
+410,2,"['nypl_1851_1852_doggetts_002792', 'nypl_1851_1852_doggetts_003178']",0.73,[],False
+411,2,"['nypl_1851_1852_doggetts_004152', 'nypl_1851_1852_doggetts_005843']",0.52,[],False
+412,2,"['nypl_1851_1852_doggetts_005270', 'nypl_1851_1852_doggetts_005541']",0.58,[],False
+413,2,"['nypl_1851_1852_doggetts_007234', 'nypl_1851_1852_doggetts_007235']",0.555,[],False
+414,2,"['nypl_1851_1852_doggetts_006804', 'nypl_1851_1852_doggetts_006805']",0.52,[],False
+415,2,"['nypl_1851_1852_doggetts_001885', 'nypl_1851_1852_doggetts_005799']",0.515,[],False
+416,4,"['nypl_1851_1852_doggetts_002847', 'nypl_1851_1852_doggetts_002848', 'nypl_1851_1852_doggetts_002856', 'nypl_1851_1852_doggetts_003109']",0.57875,['multi_match'],True
+417,2,"['nypl_1851_1852_doggetts_005203', 'nypl_1851_1852_doggetts_005212']",0.51,[],False
+418,3,"['nypl_1851_1852_doggetts_005371', 'nypl_1851_1852_doggetts_005383', 'nypl_1851_1852_doggetts_006987']",0.5925,['multi_match'],True
+419,2,"['nypl_1851_1852_doggetts_001462', 'nypl_1851_1852_doggetts_006251']",0.555,[],False
+420,2,"['nypl_1851_1852_doggetts_000520', 'nypl_1851_1852_doggetts_000521']",0.58,[],False
+421,2,"['nypl_1851_1852_doggetts_004248', 'nypl_1851_1852_doggetts_004249']",0.615,[],False
+422,2,"['nypl_1851_1852_doggetts_004410', 'nypl_1851_1852_doggetts_004539']",1.0,[],False
+423,2,"['nypl_1851_1852_doggetts_001330', 'nypl_1851_1852_doggetts_006536']",0.725,[],False
+424,3,"['nypl_1851_1852_doggetts_001425', 'nypl_1851_1852_doggetts_001427', 'nypl_1851_1852_doggetts_006165']",0.54,['multi_match'],True
+425,2,"['nypl_1851_1852_doggetts_000931', 'nypl_1851_1852_doggetts_000932']",0.515,[],False
+426,2,"['nypl_1851_1852_doggetts_005626', 'nypl_1851_1852_doggetts_006411']",0.55,['conflicting_occupation'],True
+427,3,"['nypl_1851_1852_doggetts_002521', 'nypl_1851_1852_doggetts_006219', 'nypl_1851_1852_doggetts_006509']",0.5275000000000001,['multi_match'],True
+428,6,"['nypl_1851_1852_doggetts_002021', 'nypl_1851_1852_doggetts_002330', 'nypl_1851_1852_doggetts_005285', 'nypl_1851_1852_doggetts_005840', 'nypl_1851_1852_doggetts_006017', 'nypl_1851_1852_doggetts_006030']",0.5890000000000001,['multi_match'],True
+429,2,"['nypl_1851_1852_doggetts_002549', 'nypl_1851_1852_doggetts_002587']",0.555,[],False
+430,2,"['nypl_1851_1852_doggetts_003489', 'nypl_1851_1852_doggetts_003492']",0.94,[],False
+431,2,"['nypl_1851_1852_doggetts_007524', 'nypl_1851_1852_doggetts_007526']",0.54,[],False
+432,2,"['nypl_1851_1852_doggetts_002596', 'nypl_1851_1852_doggetts_002597']",0.915,[],False
+433,2,"['nypl_1851_1852_doggetts_006759', 'nypl_1851_1852_doggetts_006760']",0.59,['conflicting_occupation'],True
+434,2,"['nypl_1851_1852_doggetts_001240', 'nypl_1851_1852_doggetts_001241']",0.545,[],False
+435,2,"['nypl_1851_1852_doggetts_002502', 'nypl_1851_1852_doggetts_002518']",0.56,[],False
+436,2,"['nypl_1851_1852_doggetts_005181', 'nypl_1851_1852_doggetts_005182']",0.555,[],False
+437,2,"['nypl_1851_1852_doggetts_002373', 'nypl_1851_1852_doggetts_002379']",0.535,['conflicting_occupation'],True
+438,2,"['nypl_1851_1852_doggetts_006746', 'nypl_1851_1852_doggetts_006748']",0.755,[],False
+439,2,"['nypl_1851_1852_doggetts_000712', 'nypl_1851_1852_doggetts_000717']",0.52,[],False
+440,2,"['nypl_1851_1852_doggetts_001590', 'nypl_1851_1852_doggetts_001591']",0.575,[],False
+441,2,"['nypl_1851_1852_doggetts_003445', 'nypl_1851_1852_doggetts_006714']",0.515,[],False
+442,2,"['nypl_1851_1852_doggetts_002835', 'nypl_1851_1852_doggetts_003106']",0.515,[],False
+443,3,"['nypl_1851_1852_doggetts_003432', 'nypl_1851_1852_doggetts_003444', 'nypl_1851_1852_doggetts_004201']",0.5525,['multi_match'],True
+444,2,"['nypl_1851_1852_doggetts_000619', 'nypl_1851_1852_doggetts_000801']",0.52,[],False
+445,2,"['nypl_1851_1852_doggetts_005058', 'nypl_1851_1852_doggetts_005059']",0.58,[],False
+446,2,"['nypl_1851_1852_doggetts_001129', 'nypl_1851_1852_doggetts_001131']",0.545,[],False
+447,2,"['nypl_1851_1852_doggetts_000461', 'nypl_1851_1852_doggetts_000465']",0.54,[],False
+448,2,"['nypl_1851_1852_doggetts_004027', 'nypl_1851_1852_doggetts_004028']",0.52,[],False
+449,2,"['nypl_1851_1852_doggetts_003996', 'nypl_1851_1852_doggetts_006721']",0.545,[],False
+450,2,"['nypl_1851_1852_doggetts_002689', 'nypl_1851_1852_doggetts_004017']",0.785,[],False
+451,2,"['nypl_1851_1852_doggetts_003762', 'nypl_1851_1852_doggetts_003765']",0.54,['conflicting_occupation'],True
+452,2,"['nypl_1851_1852_doggetts_005350', 'nypl_1851_1852_doggetts_005352']",0.57,[],False
+453,2,"['nypl_1851_1852_doggetts_001538', 'nypl_1851_1852_doggetts_002553']",0.52,[],False
+454,2,"['nypl_1851_1852_doggetts_001560', 'nypl_1851_1852_doggetts_001564']",0.52,[],False
+455,2,"['nypl_1851_1852_doggetts_004494', 'nypl_1851_1852_doggetts_004495']",0.56,[],False
+456,2,"['nypl_1851_1852_doggetts_000141', 'nypl_1851_1852_doggetts_000142']",0.765,[],False
+457,2,"['nypl_1851_1852_doggetts_001083', 'nypl_1851_1852_doggetts_006080']",0.545,[],False
+458,2,"['nypl_1851_1852_doggetts_000854', 'nypl_1851_1852_doggetts_000866']",0.52,[],False
+459,3,"['nypl_1851_1852_doggetts_006133', 'nypl_1851_1852_doggetts_006140', 'nypl_1851_1852_doggetts_006439']",0.525,['multi_match'],True
+460,2,"['nypl_1851_1852_doggetts_003311', 'nypl_1851_1852_doggetts_003320']",0.545,[],False
+461,2,"['nypl_1851_1852_doggetts_007663', 'nypl_1851_1852_doggetts_007685']",0.655,[],False
+462,2,"['nypl_1851_1852_doggetts_004105', 'nypl_1851_1852_doggetts_004108']",0.555,[],False
+463,2,"['nypl_1851_1852_doggetts_003035', 'nypl_1851_1852_doggetts_003036']",0.55,[],False
+464,2,"['nypl_1851_1852_doggetts_003662', 'nypl_1851_1852_doggetts_003665']",0.52,[],False
+465,2,"['nypl_1851_1852_doggetts_007281', 'nypl_1851_1852_doggetts_007971']",0.515,[],False
+466,2,"['nypl_1851_1852_doggetts_003000', 'nypl_1851_1852_doggetts_003001']",0.545,[],False
+467,2,"['nypl_1851_1852_doggetts_007377', 'nypl_1851_1852_doggetts_007378']",0.58,[],False
+468,2,"['nypl_1851_1852_doggetts_000109', 'nypl_1851_1852_doggetts_000111']",0.58,['conflicting_occupation'],True
+469,2,"['nypl_1851_1852_doggetts_001789', 'nypl_1851_1852_doggetts_001790']",0.78,[],False
+470,2,"['nypl_1851_1852_doggetts_002095', 'nypl_1851_1852_doggetts_002096']",0.58,[],False
+471,2,"['nypl_1851_1852_doggetts_000245', 'nypl_1851_1852_doggetts_000246']",0.555,[],False
+472,2,"['nypl_1851_1852_doggetts_003397', 'nypl_1851_1852_doggetts_003964']",0.54,[],False
+473,2,"['nypl_1851_1852_doggetts_003786', 'nypl_1851_1852_doggetts_003789']",0.545,[],False
+474,3,"['nypl_1851_1852_doggetts_000659', 'nypl_1851_1852_doggetts_000661', 'nypl_1851_1852_doggetts_004678']",0.6916666666666665,['multi_match'],True
+475,2,"['nypl_1851_1852_doggetts_002433', 'nypl_1851_1852_doggetts_005108']",0.705,[],False
+476,2,"['nypl_1851_1852_doggetts_002808', 'nypl_1851_1852_doggetts_003180']",0.54,['conflicting_occupation'],True
+477,2,"['nypl_1851_1852_doggetts_000250', 'nypl_1851_1852_doggetts_000258']",0.535,[],False
+478,2,"['nypl_1851_1852_doggetts_007225', 'nypl_1851_1852_doggetts_007226']",0.54,[],False
+479,4,"['nypl_1851_1852_doggetts_001441', 'nypl_1851_1852_doggetts_001443', 'nypl_1851_1852_doggetts_001463', 'nypl_1851_1852_doggetts_006875']",0.5475,['multi_match'],True
+480,6,"['nypl_1851_1852_doggetts_002753', 'nypl_1851_1852_doggetts_002763', 'nypl_1851_1852_doggetts_002767', 'nypl_1851_1852_doggetts_002769', 'nypl_1851_1852_doggetts_002776', 'nypl_1851_1852_doggetts_003090']",0.55125,['multi_match'],True
+481,2,"['nypl_1851_1852_doggetts_003246', 'nypl_1851_1852_doggetts_003247']",0.945,[],False
+482,2,"['nypl_1851_1852_doggetts_005850', 'nypl_1851_1852_doggetts_005851']",0.525,['conflicting_occupation'],True
+483,2,"['nypl_1851_1852_doggetts_000784', 'nypl_1851_1852_doggetts_000896']",0.555,[],False
+484,2,"['nypl_1851_1852_doggetts_000669', 'nypl_1851_1852_doggetts_000670']",0.55,[],False
+485,2,"['nypl_1851_1852_doggetts_006416', 'nypl_1851_1852_doggetts_006525']",0.54,[],False
+486,2,"['nypl_1851_1852_doggetts_001824', 'nypl_1851_1852_doggetts_001829']",0.505,['conflicting_occupation'],True
+487,3,"['nypl_1851_1852_doggetts_002988', 'nypl_1851_1852_doggetts_002992', 'nypl_1851_1852_doggetts_003149']",0.54,['multi_match'],True
+488,3,"['nypl_1851_1852_doggetts_007790', 'nypl_1851_1852_doggetts_007805', 'nypl_1851_1852_doggetts_007811']",0.535,"['multi_match', 'conflicting_occupation']",True
+489,2,"['nypl_1851_1852_doggetts_007343', 'nypl_1851_1852_doggetts_007344']",0.945,[],False
+490,2,"['nypl_1851_1852_doggetts_000928', 'nypl_1851_1852_doggetts_000929']",0.57,[],False
+491,2,"['nypl_1851_1852_doggetts_001217', 'nypl_1851_1852_doggetts_001218']",0.94,[],False
+492,2,"['nypl_1851_1852_doggetts_000429', 'nypl_1851_1852_doggetts_003678']",0.54,[],False
+493,2,"['nypl_1851_1852_doggetts_004182', 'nypl_1851_1852_doggetts_004184']",0.555,[],False
+494,2,"['nypl_1851_1852_doggetts_003256', 'nypl_1851_1852_doggetts_003257']",1.0,[],False
+495,2,"['nypl_1851_1852_doggetts_003842', 'nypl_1851_1852_doggetts_003925']",0.54,[],False
+496,2,"['nypl_1851_1852_doggetts_001216', 'nypl_1851_1852_doggetts_001219']",0.94,[],False
+497,2,"['nypl_1851_1852_doggetts_003749', 'nypl_1851_1852_doggetts_005136']",0.56,[],False
+498,2,"['nypl_1851_1852_doggetts_004435', 'nypl_1851_1852_doggetts_004436']",0.565,[],False
+499,2,"['nypl_1851_1852_doggetts_001695', 'nypl_1851_1852_doggetts_002236']",0.52,[],False
+500,2,"['nypl_1851_1852_doggetts_004122', 'nypl_1851_1852_doggetts_004251']",0.535,[],False
+501,2,"['nypl_1851_1852_doggetts_000816', 'nypl_1851_1852_doggetts_000818']",0.57,[],False
+502,2,"['nypl_1851_1852_doggetts_000835', 'nypl_1851_1852_doggetts_000844']",0.54,[],False
+503,2,"['nypl_1851_1852_doggetts_001242', 'nypl_1851_1852_doggetts_001246']",0.515,[],False
+504,2,"['nypl_1851_1852_doggetts_007761', 'nypl_1851_1852_doggetts_007763']",0.545,[],False
+505,2,"['nypl_1851_1852_doggetts_003559', 'nypl_1851_1852_doggetts_005071']",0.535,[],False
+506,3,"['nypl_1851_1852_doggetts_005647', 'nypl_1851_1852_doggetts_006038', 'nypl_1851_1852_doggetts_006039']",0.7224999999999999,['multi_match'],True
+507,2,"['nypl_1851_1852_doggetts_002766', 'nypl_1851_1852_doggetts_002777']",0.565,[],False
+508,3,"['nypl_1851_1852_doggetts_005234', 'nypl_1851_1852_doggetts_005269', 'nypl_1851_1852_doggetts_005273']",0.5266666666666667,['multi_match'],True
+509,2,"['nypl_1851_1852_doggetts_000455', 'nypl_1851_1852_doggetts_006077']",0.545,[],False
+510,2,"['nypl_1851_1852_doggetts_007906', 'nypl_1851_1852_doggetts_007907']",0.58,[],False
+511,2,"['nypl_1851_1852_doggetts_007603', 'nypl_1851_1852_doggetts_007606']",0.94,[],False
+512,2,"['nypl_1851_1852_doggetts_005956', 'nypl_1851_1852_doggetts_005957']",0.75,[],False
+513,2,"['nypl_1851_1852_doggetts_001531', 'nypl_1851_1852_doggetts_005624']",0.545,[],False
+514,2,"['nypl_1851_1852_doggetts_005462', 'nypl_1851_1852_doggetts_005546']",0.515,[],False
+515,3,"['nypl_1851_1852_doggetts_006590', 'nypl_1851_1852_doggetts_006877', 'nypl_1851_1852_doggetts_006878']",0.5383333333333334,['multi_match'],True
+516,2,"['nypl_1851_1852_doggetts_003457', 'nypl_1851_1852_doggetts_004052']",0.525,['conflicting_occupation'],True
+517,2,"['nypl_1851_1852_doggetts_003024', 'nypl_1851_1852_doggetts_003156']",0.505,['conflicting_occupation'],True
+518,2,"['nypl_1851_1852_doggetts_003782', 'nypl_1851_1852_doggetts_005143']",0.545,[],False
+519,3,"['nypl_1851_1852_doggetts_001546', 'nypl_1851_1852_doggetts_005829', 'nypl_1851_1852_doggetts_006958']",0.5325,['multi_match'],True
+520,2,"['nypl_1851_1852_doggetts_003189', 'nypl_1851_1852_doggetts_004289']",0.555,[],False
+521,2,"['nypl_1851_1852_doggetts_004058', 'nypl_1851_1852_doggetts_004142']",0.54,[],False
+522,2,"['nypl_1851_1852_doggetts_005198', 'nypl_1851_1852_doggetts_005207']",0.56,[],False
+523,2,"['nypl_1851_1852_doggetts_001690', 'nypl_1851_1852_doggetts_002260']",0.52,[],False
+524,2,"['nypl_1851_1852_doggetts_004264', 'nypl_1851_1852_doggetts_005178']",0.52,[],False
+525,2,"['nypl_1851_1852_doggetts_005629', 'nypl_1851_1852_doggetts_005630']",0.995,[],False
+526,2,"['nypl_1851_1852_doggetts_007870', 'nypl_1851_1852_doggetts_007871']",0.52,['conflicting_occupation'],True
+527,2,"['nypl_1851_1852_doggetts_001756', 'nypl_1851_1852_doggetts_001786']",0.555,[],False
+528,2,"['nypl_1851_1852_doggetts_001333', 'nypl_1851_1852_doggetts_001334']",0.515,[],False
+529,2,"['nypl_1851_1852_doggetts_003924', 'nypl_1851_1852_doggetts_004022']",0.515,[],False
+530,2,"['nypl_1851_1852_doggetts_002592', 'nypl_1851_1852_doggetts_003745']",0.52,[],False
+531,2,"['nypl_1851_1852_doggetts_004377', 'nypl_1851_1852_doggetts_004380']",0.94,[],False
+532,2,"['nypl_1851_1852_doggetts_005451', 'nypl_1851_1852_doggetts_005456']",0.52,[],False
+533,2,"['nypl_1851_1852_doggetts_002548', 'nypl_1851_1852_doggetts_006227']",0.555,[],False
+534,2,"['nypl_1851_1852_doggetts_006980', 'nypl_1851_1852_doggetts_007025']",0.555,[],False
+535,2,"['nypl_1851_1852_doggetts_006126', 'nypl_1851_1852_doggetts_006127']",0.555,[],False
+536,2,"['nypl_1851_1852_doggetts_001574', 'nypl_1851_1852_doggetts_005816']",0.52,[],False
+537,2,"['nypl_1851_1852_doggetts_004575', 'nypl_1851_1852_doggetts_004630']",0.725,[],False
+538,2,"['nypl_1851_1852_doggetts_003267', 'nypl_1851_1852_doggetts_003312']",0.515,[],False
+539,2,"['nypl_1851_1852_doggetts_007170', 'nypl_1851_1852_doggetts_007910']",0.53,[],False
+540,2,"['nypl_1851_1852_doggetts_005385', 'nypl_1851_1852_doggetts_005387']",0.585,[],False
+541,2,"['nypl_1851_1852_doggetts_003956', 'nypl_1851_1852_doggetts_004210']",0.53,[],False
+542,2,"['nypl_1851_1852_doggetts_000126', 'nypl_1851_1852_doggetts_000128']",0.555,[],False
+543,2,"['nypl_1851_1852_doggetts_002722', 'nypl_1851_1852_doggetts_003854']",0.965,[],False
+544,3,"['nypl_1851_1852_doggetts_004848', 'nypl_1851_1852_doggetts_004849', 'nypl_1851_1852_doggetts_004854']",0.7266666666666666,"['multi_match', 'conflicting_occupation']",True
+545,2,"['nypl_1851_1852_doggetts_002218', 'nypl_1851_1852_doggetts_002219']",0.54,['conflicting_occupation'],True
+546,2,"['nypl_1851_1852_doggetts_006476', 'nypl_1851_1852_doggetts_006479']",0.655,[],False
+547,2,"['nypl_1851_1852_doggetts_004455', 'nypl_1851_1852_doggetts_004813']",0.87,[],False
+548,2,"['nypl_1851_1852_doggetts_004037', 'nypl_1851_1852_doggetts_005274']",0.515,[],False
+549,2,"['nypl_1851_1852_doggetts_004664', 'nypl_1851_1852_doggetts_004737']",0.555,[],False
+550,2,"['nypl_1851_1852_doggetts_006598', 'nypl_1851_1852_doggetts_006599']",0.555,[],False
+551,2,"['nypl_1851_1852_doggetts_000039', 'nypl_1851_1852_doggetts_000144']",0.52,[],False
+552,2,"['nypl_1851_1852_doggetts_003234', 'nypl_1851_1852_doggetts_003301']",0.555,[],False
+553,2,"['nypl_1851_1852_doggetts_003253', 'nypl_1851_1852_doggetts_004236']",0.535,[],False
+554,2,"['nypl_1851_1852_doggetts_001268', 'nypl_1851_1852_doggetts_006609']",0.57,[],False
+555,2,"['nypl_1851_1852_doggetts_000741', 'nypl_1851_1852_doggetts_000766']",0.555,[],False
+556,2,"['nypl_1851_1852_doggetts_001013', 'nypl_1851_1852_doggetts_001332']",0.58,[],False
+557,2,"['nypl_1851_1852_doggetts_000601', 'nypl_1851_1852_doggetts_003846']",0.555,[],False
+558,2,"['nypl_1851_1852_doggetts_001375', 'nypl_1851_1852_doggetts_006545']",0.52,[],False
+559,2,"['nypl_1851_1852_doggetts_006454', 'nypl_1851_1852_doggetts_006469']",0.52,[],False
+560,2,"['nypl_1851_1852_doggetts_003988', 'nypl_1851_1852_doggetts_003992']",0.555,[],False
+561,2,"['nypl_1851_1852_doggetts_001184', 'nypl_1851_1852_doggetts_006186']",0.57,[],False
+562,2,"['nypl_1851_1852_doggetts_006425', 'nypl_1851_1852_doggetts_006426']",0.875,[],False
+563,2,"['nypl_1851_1852_doggetts_000457', 'nypl_1851_1852_doggetts_000533']",0.545,[],False
+564,2,"['nypl_1851_1852_doggetts_003979', 'nypl_1851_1852_doggetts_005928']",0.52,[],False
+565,2,"['nypl_1851_1852_doggetts_006946', 'nypl_1851_1852_doggetts_006950']",0.56,[],False
+566,2,"['nypl_1851_1852_doggetts_000813', 'nypl_1851_1852_doggetts_000814']",0.575,['conflicting_occupation'],True
+567,2,"['nypl_1851_1852_doggetts_003525', 'nypl_1851_1852_doggetts_003539']",0.755,[],False
+568,2,"['nypl_1851_1852_doggetts_007692', 'nypl_1851_1852_doggetts_007852']",0.565,['conflicting_occupation'],True
+569,2,"['nypl_1851_1852_doggetts_007994', 'nypl_1851_1852_doggetts_007997']",0.94,[],False
+570,2,"['nypl_1851_1852_doggetts_000824', 'nypl_1851_1852_doggetts_000833']",0.97,[],False
+571,2,"['nypl_1851_1852_doggetts_006211', 'nypl_1851_1852_doggetts_006422']",0.65,[],False

@@ -12,3 +12,10 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# nyc_directories real-world source data CANNOT be reliably re-downloaded
+# in a network-restricted environment (see docs/limitations.md) and is
+# small, plain-text, and MIT-licensed - vendored and committed instead.
+!data/raw/nyc_directories/
+data/processed/nyc_directories/*
+!data/processed/nyc_directories/.gitkeep

@@ -1,45 +1,28 @@
-"""Optional, experimental LLM-assisted linkage supplement.
+"""Optional, experimental LLM-assisted linkage supplement for the
+synthetic pipeline. Adapts the generic Ollama client in `llm_assist.py`
+to this pipeline's census/parish record schema.
 
-Scope, deliberately narrow: this module does NOT replace the rule-based or
-ML linkage methods. It only adjudicates the "gray zone" of candidate pairs
-where the ML model's predicted probability is close to the decision
+Scope, deliberately narrow: this module does NOT replace the rule-based
+or ML linkage methods. It only adjudicates the "gray zone" of candidate
+pairs where the ML model's predicted probability is close to the decision
 boundary (default 0.35-0.65), i.e. cases the tabular classifier itself is
 least confident about.
 
-This module requires network access and the caller's own Anthropic API key
-(ANTHROPIC_API_KEY) and is therefore never part of the default pipeline
-(`workflow/Snakefile`'s `all` rule) and never contributes to the headline
-precision/recall/F1 numbers in the README - those must stay reproducible
-by anyone cloning the repository without any paid API access. See
-docs/limitations.md for the full rationale.
+Requires a local Ollama server (https://ollama.com) and is therefore
+never part of the default pipeline (`workflow/Snakefile`'s `all` rule)
+and never contributes to the headline precision/recall/F1 numbers in the
+README - those must stay reproducible by anyone cloning the repository
+without any extra runtime dependency. See docs/limitations.md.
 """
 
 from __future__ import annotations
 
-import re
-
 import pandas as pd
+
+from . import llm_assist
 
 GRAY_ZONE_LOW = 0.35
 GRAY_ZONE_HIGH = 0.65
-
-PROMPT_TEMPLATE = """Du undersøger, om to transskriberede historiske kilde-poster beskriver samme person.
-
-Post A (folketælling):
-- Fornavn: {census_given_name}
-- Efternavn: {census_surname}
-- Alder ved folketælling ({census_year}): {census_age}
-- Fødested: {census_birth_place}
-
-Post B (kirkebog):
-- Fornavn: {parish_given_name}
-- Efternavn: {parish_surname}
-- Fødselsår: {parish_birth_year}
-- Fødested: {parish_birth_place}
-
-Historiske kilder indeholder ofte stavevarianter og transskriptionsfejl. \
-Svar med præcis ét ord på første linje: MATCH eller NO_MATCH. \
-Giv derefter en kort begrundelse (maks. 2 sætninger)."""
 
 
 def select_gray_zone_pairs(
@@ -51,42 +34,52 @@ def select_gray_zone_pairs(
     return predictions[mask].copy()
 
 
-def build_prompt(row: pd.Series) -> str:
-    return PROMPT_TEMPLATE.format(
-        census_given_name=row["census_given_name"],
-        census_surname=row["census_surname"],
-        census_year=row["census_year"],
-        census_age=row["census_age"],
-        census_birth_place=row["census_birth_place"],
-        parish_given_name=row["parish_given_name"],
-        parish_surname=row["parish_surname"],
-        parish_birth_year=row["parish_birth_year"],
-        parish_birth_place=row["parish_birth_place"],
-    )
+def row_to_census_record(row: pd.Series) -> dict:
+    return {
+        "fornavn": row.get("census_given_name"),
+        "efternavn": row.get("census_surname"),
+        "alder_ved_folketaelling": row.get("census_age"),
+        "folketaellingsaar": row.get("census_year"),
+        "foedested": row.get("census_birth_place"),
+    }
 
 
-def parse_response(text: str) -> int | None:
-    """Return 1 for MATCH, 0 for NO_MATCH, or None if the response could
-    not be parsed (treated as "no verdict", never silently coerced to a
-    match or non-match).
+def row_to_parish_record(row: pd.Series) -> dict:
+    return {
+        "fornavn": row.get("parish_given_name"),
+        "efternavn": row.get("parish_surname"),
+        "foedselsaar": row.get("parish_birth_year"),
+        "foedested": row.get("parish_birth_place"),
+    }
+
+
+def classify_gray_zone_pairs(
+    gray_zone: pd.DataFrame,
+    model: str = llm_assist.DEFAULT_MODEL,
+    url: str = llm_assist.DEFAULT_OLLAMA_URL,
+) -> pd.DataFrame:
+    """Calls the local Ollama server once per gray-zone pair. Rows where
+    the call fails (Ollama unavailable, timeout, malformed/invalid
+    output) get `llm_same_person=None` and a populated `llm_error_reason`
+    - never a guessed verdict.
     """
-    first_line = text.strip().splitlines()[0].strip().upper() if text.strip() else ""
-    if re.fullmatch(r"MATCH", first_line):
-        return 1
-    if re.fullmatch(r"NO_MATCH", first_line):
-        return 0
-    return None
+    verdicts, confidences, reasonings, errors = [], [], [], []
+    for _, row in gray_zone.iterrows():
+        result = llm_assist.classify_pair(row_to_census_record(row), row_to_parish_record(row), model=model, url=url)
+        if isinstance(result, llm_assist.LlmVerdict):
+            verdicts.append(result.same_person)
+            confidences.append(result.confidence)
+            reasonings.append(result.reasoning_summary)
+            errors.append(None)
+        else:
+            verdicts.append(None)
+            confidences.append(None)
+            reasonings.append(None)
+            errors.append(result.reason)
 
-
-def classify_pair_with_llm(prompt: str, client) -> str:
-    """`client` must expose an Anthropic-SDK-style
-    `.messages.create(model=..., max_tokens=..., messages=[...])` call.
-    Kept as an injected dependency so the rest of the module is testable
-    without any network access or API key.
-    """
-    response = client.messages.create(
-        model="claude-3-5-haiku-latest",
-        max_tokens=100,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.content[0].text
+    out = gray_zone.copy()
+    out["llm_same_person"] = verdicts
+    out["llm_confidence"] = confidences
+    out["llm_reasoning"] = reasonings
+    out["llm_error_reason"] = errors
+    return out

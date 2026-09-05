@@ -1,14 +1,12 @@
 # Historical Record Linkage Lab
 
-Et selvstændigt portfolio-projekt i historisk record linkage: at afgøre,
-hvornår to poster fra støjfyldte, transskriberede kilder beskriver samme
-person - uden et CPR-nummer at slå op på, og med almindelige navne, der
-kolliderer på tværs af forskellige, urelaterede individer. Projektet
-bygger hele pipelinen fra rå data til kvalitetssikrede koblinger, på
-både et kontrolleret syntetisk datasæt og et ægte historisk OCR-datasæt.
+Et portfolio-projekt i historisk record linkage: at afgøre, hvornår
+støjfyldte, transskriberede poster - uden CPR-nummer og med navne der
+kolliderer - beskriver samme person. Demonstreret på et syntetisk
+benchmark og et ægte historisk OCR-datasæt.
 
-**Dette er et selvstændigt lærings-/portfolio-projekt.** Det er **ikke**
-udviklet af eller for Rigsarkivet, og bruger **ingen** HisPeR-data.
+**Selvstændigt lærings-/portfolio-projekt** - ikke udviklet af eller for
+Rigsarkivet, og bruger ingen HisPeR-data.
 
 ## Pipeline
 
@@ -54,23 +52,21 @@ evalueringen bygger på et lille, manuelt vurderet benchmark (92 par). Se
 
 Syntetisk benchmark, testsplit:
 
-| Metode | F1 |
-|---|---:|
-| Rule-based | 0,721 |
-| Random Forest | 0,846 |
-| Random Forest + constrained assignment | 0,878 |
+| Metode | Precision | Recall | F1 |
+|---|---:|---:|---:|
+| Rule-based | 0,994 | 0,566 | 0,721 |
+| Random Forest | 0,737 | 0,991 | 0,846 |
+| Random Forest + constrained assignment | 0,950 | 0,910 | 0,930 |
 
-![Precision, recall og F1 for regelbaseret vs. ML-linkage på det syntetiske testsplit](results/figures/method_comparison.png)
+![Precision, recall og F1 for rule-based, ML og ML+constrained assignment på det syntetiske testsplit](results/figures/method_comparison.png)
 
-*Rule-based har næsten perfekt precision men lav recall; Random Forest vender billedet om. Constrained assignment (ikke vist her, se tabel) tager det bedste fra begge ved at efterbehandle ML-modellens output.*
+*Rule-based har næsten perfekt precision men lav recall; Random Forest vender billedet om. Constrained assignment tager ML-modellens egne forudsigelser og tvinger dem til at være one-to-one - det giver det bedste af begge: højere precision end ML alene, uden at recall falder markant.*
 
-One-to-one constrained assignment løfter precision fra **0,470 til
-0,836** blandt de accepterede par, og eliminerer samtlige 2.315
-tilfælde, hvor samme post var koblet til mere end ét match. Uafhængig
-klassifikation kan acceptere modstridende links; constraint tvinger hver
-post til højst ét match, valgt efter højeste model-score. Det kan kun
-fjerne par, ikke tilføje nye, så recall falder let mens precision stiger
-markant.
+Uafhængig klassifikation kan acceptere modstridende links (samme post
+koblet til flere andre). One-to-one constrained assignment vælger kun det
+højest-scorende link pr. post og eliminerede samtlige 2.315 tilfælde af
+den slags konflikter i denne kørsel - det er derfor F1 stiger fra 0,846
+til 0,930.
 
 NYC-directory-metoderne følger samme mønster (rule-based F1 0,833 vs. ML
 0,857), men benchmarket består af kun **37 testpar** og skal derfor ikke

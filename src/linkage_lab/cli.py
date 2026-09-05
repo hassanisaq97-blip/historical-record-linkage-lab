@@ -145,6 +145,30 @@ def cmd_evaluate(_args) -> None:
         "rule_based": evaluation.compute_metrics(rule_test["is_true_match"], rule_test["predicted_match"]),
         "ml_random_forest": evaluation.compute_metrics(ml_test["is_true_match"], ml_test["predicted_match"]),
     }
+
+    # Third comparison point: the ML method's predictions after one-to-one
+    # constrained assignment (see cmd_constrained_assignment), restricted
+    # to the same test split and evaluated against the same denominator
+    # (all test pairs) as the two methods above - not the "all splits"
+    # figure reported in constrained_assignment.md, so the three bars in
+    # the resulting figure are directly comparable.
+    if PATHS["constrained_ml"].exists():
+        constrained = pd.read_csv(PATHS["constrained_ml"])
+        kept_test_keys = set(
+            zip(
+                constrained.loc[constrained["split"] == "test", "census_record_id"],
+                constrained.loc[constrained["split"] == "test", "parish_record_id"],
+            )
+        )
+        ml_test = ml_test.copy()
+        ml_test["predicted_match_constrained"] = [
+            1 if key in kept_test_keys else 0
+            for key in zip(ml_test["census_record_id"], ml_test["parish_record_id"])
+        ]
+        metrics["ml_random_forest_constrained"] = evaluation.compute_metrics(
+            ml_test["is_true_match"], ml_test["predicted_match_constrained"]
+        )
+
     comparison = evaluation.build_comparison_table(metrics)
     comparison.to_csv(PATHS["metrics_comparison"])
     print(comparison)

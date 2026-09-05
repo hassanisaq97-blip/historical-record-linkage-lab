@@ -11,6 +11,13 @@ Se README for et kort resumé. Alle tal her er genereret af
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Regelbaseret | 0,994 | 0,566 | 0,721 | 322 | 2 | 247 | 11.233 |
 | ML (Random Forest) | 0,737 | 0,991 | 0,846 | 564 | 201 | 5 | 11.034 |
+| ML + one-to-one constrained assignment | 0,950 | 0,910 | 0,930 | 518 | 27 | 51 | 11.208 |
+
+Den tredje række er ML-modellens accepterede par efter one-to-one
+constrained assignment, **restringeret til testsplittet** og evalueret
+mod samme nævner (alle 11.804 testpar) som de to andre rækker - så alle
+tre rækker er direkte sammenlignelige. Se afsnittet "Constrained
+assignment" nedenfor for en anden, bredere måling (alle splits samlet).
 
 **NYC directories (test-split af det manuelle benchmark, n = 37 par):**
 
@@ -32,14 +39,20 @@ viser precision/recall ved klassifikationstærskler 0,3-0,8 på ML-modellen.
 
 ## Constrained assignment
 
-**Syntetisk datasæt** (ML-metoden, alle splits):
+**Syntetisk datasæt, alle splits samlet** (ML-metoden, kun blandt de
+poster den selv har accepteret som match - et andet, bredere udsnit end
+testsplit-tallene i evalueringstabellen ovenfor):
 
 | | Precision | Recall | F1 | Accepterede par |
 |---|---:|---:|---:|---:|
 | Før constraint | 0,470 | 0,996 | 0,639 | 4.113 |
 | Efter constraint | 0,836 | 0,924 | 0,878 | 2.145 |
 
-Konflikter (records med >1 accepteret link) går fra 2.315 til 0.
+Konflikter (records med >1 accepteret link) går fra 2.315 til 0. Denne
+måling og testsplit-tallet ovenfor (0,930 F1) er begge korrekte - de
+svarer bare til to forskellige, dokumenterede udsnit af dataene (alle
+splits' accepterede par vs. hele testsplittet med samme nævner som de
+andre metoder).
 
 **NYC directories** (ML-metoden, hele korpus af 41.393 kandidatpar):
 1.532 accepterede par, 608 records med konflikt før constraint, 775 par

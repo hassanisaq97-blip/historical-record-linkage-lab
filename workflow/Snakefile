@@ -111,6 +111,7 @@ rule evaluate:
         f"{DATA_PROCESSED}/labeled_pairs.csv",
         f"{DATA_PROCESSED}/predictions_rule_based.csv",
         f"{DATA_PROCESSED}/predictions_ml.csv",
+        f"{DATA_PROCESSED}/constrained_ml.csv",
     output:
         f"{RESULTS_REPORTS}/metrics_comparison.csv",
         f"{RESULTS_FIGURES}/method_comparison.png",

@@ -1,0 +1,235 @@
+entity_id,n_records,record_ids,mean_link_confidence,issues,flagged
+0,4,"['nypl_1851_1852_doggetts_007148', 'nypl_1851_1852_doggetts_007280', 'nypl_1851_1852_doggetts_007282', 'nypl_1851_1852_doggetts_007283']",,['multi_match'],True
+1,6,"['nypl_1851_1852_doggetts_001050', 'nypl_1851_1852_doggetts_001481', 'nypl_1851_1852_doggetts_001483', 'nypl_1851_1852_doggetts_001484', 'nypl_1851_1852_doggetts_006591', 'nypl_1851_1852_doggetts_006592']",,['multi_match'],True
+2,2,"['nypl_1851_1852_doggetts_002787', 'nypl_1851_1852_doggetts_003099']",,[],False
+3,2,"['nypl_1851_1852_doggetts_005353', 'nypl_1851_1852_doggetts_005355']",,[],False
+4,4,"['nypl_1851_1852_doggetts_003027', 'nypl_1851_1852_doggetts_003028', 'nypl_1851_1852_doggetts_003029', 'nypl_1851_1852_doggetts_003309']",,['multi_match'],True
+5,2,"['nypl_1851_1852_doggetts_000574', 'nypl_1851_1852_doggetts_006956']",,[],False
+6,2,"['nypl_1851_1852_doggetts_002820', 'nypl_1851_1852_doggetts_002824']",,[],False
+7,4,"['nypl_1851_1852_doggetts_006835', 'nypl_1851_1852_doggetts_006837', 'nypl_1851_1852_doggetts_006838', 'nypl_1851_1852_doggetts_006839']",,['multi_match'],True
+8,2,"['nypl_1851_1852_doggetts_007848', 'nypl_1851_1852_doggetts_007851']",,[],False
+9,5,"['nypl_1851_1852_doggetts_001700', 'nypl_1851_1852_doggetts_001701', 'nypl_1851_1852_doggetts_001706', 'nypl_1851_1852_doggetts_001707', 'nypl_1851_1852_doggetts_001708']",,['multi_match'],True
+10,2,"['nypl_1851_1852_doggetts_002447', 'nypl_1851_1852_doggetts_004939']",,[],False
+11,2,"['nypl_1851_1852_doggetts_003432', 'nypl_1851_1852_doggetts_004201']",,[],False
+12,2,"['nypl_1851_1852_doggetts_006549', 'nypl_1851_1852_doggetts_006550']",,[],False
+13,2,"['nypl_1851_1852_doggetts_000786', 'nypl_1851_1852_doggetts_000787']",,[],False
+14,2,"['nypl_1851_1852_doggetts_002417', 'nypl_1851_1852_doggetts_002418']",,[],False
+15,2,"['nypl_1851_1852_doggetts_002915', 'nypl_1851_1852_doggetts_003120']",,[],False
+16,2,"['nypl_1851_1852_doggetts_005058', 'nypl_1851_1852_doggetts_005059']",,[],False
+17,2,"['nypl_1851_1852_doggetts_002830', 'nypl_1851_1852_doggetts_002831']",,[],False
+18,2,"['nypl_1851_1852_doggetts_000391', 'nypl_1851_1852_doggetts_003896']",,[],False
+19,4,"['nypl_1851_1852_doggetts_004607', 'nypl_1851_1852_doggetts_004626', 'nypl_1851_1852_doggetts_004655', 'nypl_1851_1852_doggetts_004656']",,['multi_match'],True
+20,6,"['nypl_1851_1852_doggetts_007265', 'nypl_1851_1852_doggetts_007271', 'nypl_1851_1852_doggetts_007272', 'nypl_1851_1852_doggetts_007273', 'nypl_1851_1852_doggetts_007274', 'nypl_1851_1852_doggetts_007277']",,['multi_match'],True
+21,2,"['nypl_1851_1852_doggetts_000126', 'nypl_1851_1852_doggetts_000128']",,[],False
+22,2,"['nypl_1851_1852_doggetts_000384', 'nypl_1851_1852_doggetts_005202']",,[],False
+23,2,"['nypl_1851_1852_doggetts_001705', 'nypl_1851_1852_doggetts_002246']",,[],False
+24,2,"['nypl_1851_1852_doggetts_004755', 'nypl_1851_1852_doggetts_004866']",,[],False
+25,3,"['nypl_1851_1852_doggetts_007039', 'nypl_1851_1852_doggetts_007040', 'nypl_1851_1852_doggetts_007067']",,['multi_match'],True
+26,2,"['nypl_1851_1852_doggetts_005172', 'nypl_1851_1852_doggetts_005177']",,[],False
+27,2,"['nypl_1851_1852_doggetts_005359', 'nypl_1851_1852_doggetts_005373']",,[],False
+28,2,"['nypl_1851_1852_doggetts_003451', 'nypl_1851_1852_doggetts_003455']",,[],False
+29,2,"['nypl_1851_1852_doggetts_004126', 'nypl_1851_1852_doggetts_004128']",,[],False
+30,2,"['nypl_1851_1852_doggetts_000407', 'nypl_1851_1852_doggetts_005931']",,[],False
+31,2,"['nypl_1851_1852_doggetts_001387', 'nypl_1851_1852_doggetts_006214']",,[],False
+32,2,"['nypl_1851_1852_doggetts_004806', 'nypl_1851_1852_doggetts_004807']",,[],False
+33,2,"['nypl_1851_1852_doggetts_002127', 'nypl_1851_1852_doggetts_002332']",,[],False
+34,5,"['nypl_1851_1852_doggetts_000390', 'nypl_1851_1852_doggetts_000419', 'nypl_1851_1852_doggetts_000434', 'nypl_1851_1852_doggetts_004949', 'nypl_1851_1852_doggetts_005140']",,['multi_match'],True
+35,2,"['nypl_1851_1852_doggetts_007179', 'nypl_1851_1852_doggetts_007269']",,[],False
+36,3,"['nypl_1851_1852_doggetts_001018', 'nypl_1851_1852_doggetts_006542', 'nypl_1851_1852_doggetts_006931']",,['multi_match'],True
+37,2,"['nypl_1851_1852_doggetts_002670', 'nypl_1851_1852_doggetts_004981']",,[],False
+38,2,"['nypl_1851_1852_doggetts_003269', 'nypl_1851_1852_doggetts_003316']",,[],False
+39,2,"['nypl_1851_1852_doggetts_001009', 'nypl_1851_1852_doggetts_001351']",,[],False
+40,2,"['nypl_1851_1852_doggetts_002805', 'nypl_1851_1852_doggetts_002806']",,[],False
+41,3,"['nypl_1851_1852_doggetts_004708', 'nypl_1851_1852_doggetts_006793', 'nypl_1851_1852_doggetts_006795']",,['multi_match'],True
+42,2,"['nypl_1851_1852_doggetts_000939', 'nypl_1851_1852_doggetts_000941']",,[],False
+43,2,"['nypl_1851_1852_doggetts_005629', 'nypl_1851_1852_doggetts_005630']",,[],False
+44,2,"['nypl_1851_1852_doggetts_001083', 'nypl_1851_1852_doggetts_006080']",,[],False
+45,2,"['nypl_1851_1852_doggetts_007189', 'nypl_1851_1852_doggetts_007316']",,[],False
+46,2,"['nypl_1851_1852_doggetts_006761', 'nypl_1851_1852_doggetts_006833']",,[],False
+47,2,"['nypl_1851_1852_doggetts_002833', 'nypl_1851_1852_doggetts_002834']",,[],False
+48,2,"['nypl_1851_1852_doggetts_006759', 'nypl_1851_1852_doggetts_006760']",,['conflicting_occupation'],True
+49,3,"['nypl_1851_1852_doggetts_002541', 'nypl_1851_1852_doggetts_002542', 'nypl_1851_1852_doggetts_002543']",,['multi_match'],True
+50,2,"['nypl_1851_1852_doggetts_004667', 'nypl_1851_1852_doggetts_004745']",,[],False
+51,2,"['nypl_1851_1852_doggetts_002914', 'nypl_1851_1852_doggetts_006524']",,[],False
+52,2,"['nypl_1851_1852_doggetts_001052', 'nypl_1851_1852_doggetts_001205']",,[],False
+53,2,"['nypl_1851_1852_doggetts_004536', 'nypl_1851_1852_doggetts_004540']",,[],False
+54,2,"['nypl_1851_1852_doggetts_000808', 'nypl_1851_1852_doggetts_000810']",,[],False
+55,2,"['nypl_1851_1852_doggetts_005981', 'nypl_1851_1852_doggetts_005984']",,[],False
+56,2,"['nypl_1851_1852_doggetts_000259', 'nypl_1851_1852_doggetts_000260']",,[],False
+57,2,"['nypl_1851_1852_doggetts_003050', 'nypl_1851_1852_doggetts_003058']",,[],False
+58,2,"['nypl_1851_1852_doggetts_007187', 'nypl_1851_1852_doggetts_007306']",,[],False
+59,3,"['nypl_1851_1852_doggetts_000509', 'nypl_1851_1852_doggetts_006715', 'nypl_1851_1852_doggetts_006718']",,['multi_match'],True
+60,2,"['nypl_1851_1852_doggetts_007322', 'nypl_1851_1852_doggetts_007335']",,[],False
+61,2,"['nypl_1851_1852_doggetts_002068', 'nypl_1851_1852_doggetts_004918']",,[],False
+62,2,"['nypl_1851_1852_doggetts_004456', 'nypl_1851_1852_doggetts_004669']",,[],False
+63,2,"['nypl_1851_1852_doggetts_005350', 'nypl_1851_1852_doggetts_005352']",,[],False
+64,3,"['nypl_1851_1852_doggetts_005414', 'nypl_1851_1852_doggetts_006199', 'nypl_1851_1852_doggetts_006250']",,['multi_match'],True
+65,5,"['nypl_1851_1852_doggetts_001455', 'nypl_1851_1852_doggetts_001457', 'nypl_1851_1852_doggetts_006582', 'nypl_1851_1852_doggetts_006583', 'nypl_1851_1852_doggetts_006584']",,['multi_match'],True
+66,2,"['nypl_1851_1852_doggetts_004278', 'nypl_1851_1852_doggetts_004279']",,[],False
+67,2,"['nypl_1851_1852_doggetts_001395', 'nypl_1851_1852_doggetts_001984']",,[],False
+68,2,"['nypl_1851_1852_doggetts_004455', 'nypl_1851_1852_doggetts_004813']",,[],False
+69,3,"['nypl_1851_1852_doggetts_001349', 'nypl_1851_1852_doggetts_001350', 'nypl_1851_1852_doggetts_001653']",,['multi_match'],True
+70,2,"['nypl_1851_1852_doggetts_000291', 'nypl_1851_1852_doggetts_000292']",,[],False
+71,2,"['nypl_1851_1852_doggetts_004634', 'nypl_1851_1852_doggetts_004636']",,[],False
+72,2,"['nypl_1851_1852_doggetts_000299', 'nypl_1851_1852_doggetts_000318']",,[],False
+73,3,"['nypl_1851_1852_doggetts_004666', 'nypl_1851_1852_doggetts_004738', 'nypl_1851_1852_doggetts_004741']",,['multi_match'],True
+74,2,"['nypl_1851_1852_doggetts_003117', 'nypl_1851_1852_doggetts_003118']",,[],False
+75,3,"['nypl_1851_1852_doggetts_002847', 'nypl_1851_1852_doggetts_002848', 'nypl_1851_1852_doggetts_002854']",,['multi_match'],True
+76,2,"['nypl_1851_1852_doggetts_000949', 'nypl_1851_1852_doggetts_000961']",,[],False
+77,3,"['nypl_1851_1852_doggetts_004664', 'nypl_1851_1852_doggetts_004665', 'nypl_1851_1852_doggetts_004737']",,['multi_match'],True
+78,2,"['nypl_1851_1852_doggetts_000402', 'nypl_1851_1852_doggetts_000406']",,[],False
+79,2,"['nypl_1851_1852_doggetts_001660', 'nypl_1851_1852_doggetts_001661']",,[],False
+80,3,"['nypl_1851_1852_doggetts_004677', 'nypl_1851_1852_doggetts_004679', 'nypl_1851_1852_doggetts_004762']",,['multi_match'],True
+81,2,"['nypl_1851_1852_doggetts_002920', 'nypl_1851_1852_doggetts_003125']",,[],False
+82,2,"['nypl_1851_1852_doggetts_001359', 'nypl_1851_1852_doggetts_006884']",,[],False
+83,2,"['nypl_1851_1852_doggetts_000805', 'nypl_1851_1852_doggetts_000806']",,[],False
+84,2,"['nypl_1851_1852_doggetts_006805', 'nypl_1851_1852_doggetts_006807']",,[],False
+85,2,"['nypl_1851_1852_doggetts_000261', 'nypl_1851_1852_doggetts_000263']",,[],False
+86,2,"['nypl_1851_1852_doggetts_001177', 'nypl_1851_1852_doggetts_001178']",,[],False
+87,2,"['nypl_1851_1852_doggetts_001439', 'nypl_1851_1852_doggetts_001449']",,[],False
+88,2,"['nypl_1851_1852_doggetts_007160', 'nypl_1851_1852_doggetts_007192']",,[],False
+89,5,"['nypl_1851_1852_doggetts_002667', 'nypl_1851_1852_doggetts_005026', 'nypl_1851_1852_doggetts_005038', 'nypl_1851_1852_doggetts_005040', 'nypl_1851_1852_doggetts_005989']",,"['multi_match', 'conflicting_occupation']",True
+90,2,"['nypl_1851_1852_doggetts_005208', 'nypl_1851_1852_doggetts_005210']",,[],False
+91,2,"['nypl_1851_1852_doggetts_004735', 'nypl_1851_1852_doggetts_004736']",,[],False
+92,2,"['nypl_1851_1852_doggetts_004105', 'nypl_1851_1852_doggetts_004108']",,[],False
+93,2,"['nypl_1851_1852_doggetts_003898', 'nypl_1851_1852_doggetts_005113']",,[],False
+94,2,"['nypl_1851_1852_doggetts_000997', 'nypl_1851_1852_doggetts_006132']",,[],False
+95,4,"['nypl_1851_1852_doggetts_001022', 'nypl_1851_1852_doggetts_001347', 'nypl_1851_1852_doggetts_001356', 'nypl_1851_1852_doggetts_006936']",,['multi_match'],True
+96,2,"['nypl_1851_1852_doggetts_003035', 'nypl_1851_1852_doggetts_003036']",,[],False
+97,2,"['nypl_1851_1852_doggetts_004943', 'nypl_1851_1852_doggetts_004944']",,[],False
+98,3,"['nypl_1851_1852_doggetts_000538', 'nypl_1851_1852_doggetts_000540', 'nypl_1851_1852_doggetts_004005']",,['multi_match'],True
+99,2,"['nypl_1851_1852_doggetts_001951', 'nypl_1851_1852_doggetts_003666']",,[],False
+100,2,"['nypl_1851_1852_doggetts_003000', 'nypl_1851_1852_doggetts_003001']",,[],False
+101,2,"['nypl_1851_1852_doggetts_002913', 'nypl_1851_1852_doggetts_002931']",,[],False
+102,2,"['nypl_1851_1852_doggetts_000761', 'nypl_1851_1852_doggetts_000763']",,[],False
+103,7,"['nypl_1851_1852_doggetts_002983', 'nypl_1851_1852_doggetts_002985', 'nypl_1851_1852_doggetts_002986', 'nypl_1851_1852_doggetts_002987', 'nypl_1851_1852_doggetts_003145', 'nypl_1851_1852_doggetts_003147', 'nypl_1851_1852_doggetts_003148']",,['multi_match'],True
+104,2,"['nypl_1851_1852_doggetts_007377', 'nypl_1851_1852_doggetts_007378']",,[],False
+105,2,"['nypl_1851_1852_doggetts_001518', 'nypl_1851_1852_doggetts_006415']",,[],False
+106,3,"['nypl_1851_1852_doggetts_006790', 'nypl_1851_1852_doggetts_006791', 'nypl_1851_1852_doggetts_006797']",,['multi_match'],True
+107,2,"['nypl_1851_1852_doggetts_007743', 'nypl_1851_1852_doggetts_007744']",,[],False
+108,2,"['nypl_1851_1852_doggetts_001268', 'nypl_1851_1852_doggetts_006609']",,[],False
+109,2,"['nypl_1851_1852_doggetts_000736', 'nypl_1851_1852_doggetts_000741']",,[],False
+110,3,"['nypl_1851_1852_doggetts_003836', 'nypl_1851_1852_doggetts_005011', 'nypl_1851_1852_doggetts_005013']",,['multi_match'],True
+111,3,"['nypl_1851_1852_doggetts_007177', 'nypl_1851_1852_doggetts_007205', 'nypl_1851_1852_doggetts_007206']",,['multi_match'],True
+112,2,"['nypl_1851_1852_doggetts_002940', 'nypl_1851_1852_doggetts_002943']",,[],False
+113,2,"['nypl_1851_1852_doggetts_000245', 'nypl_1851_1852_doggetts_000246']",,[],False
+114,2,"['nypl_1851_1852_doggetts_005378', 'nypl_1851_1852_doggetts_005382']",,[],False
+115,2,"['nypl_1851_1852_doggetts_001541', 'nypl_1851_1852_doggetts_002557']",,[],False
+116,2,"['nypl_1851_1852_doggetts_002767', 'nypl_1851_1852_doggetts_002769']",,[],False
+117,2,"['nypl_1851_1852_doggetts_007960', 'nypl_1851_1852_doggetts_007961']",,[],False
+118,2,"['nypl_1851_1852_doggetts_006209', 'nypl_1851_1852_doggetts_006604']",,[],False
+119,2,"['nypl_1851_1852_doggetts_005255', 'nypl_1851_1852_doggetts_005256']",,[],False
+120,2,"['nypl_1851_1852_doggetts_003150', 'nypl_1851_1852_doggetts_003175']",,['conflicting_occupation'],True
+121,2,"['nypl_1851_1852_doggetts_002838', 'nypl_1851_1852_doggetts_002840']",,[],False
+122,4,"['nypl_1851_1852_doggetts_004684', 'nypl_1851_1852_doggetts_004768', 'nypl_1851_1852_doggetts_004772', 'nypl_1851_1852_doggetts_004775']",,['multi_match'],True
+123,2,"['nypl_1851_1852_doggetts_001020', 'nypl_1851_1852_doggetts_001355']",,[],False
+124,2,"['nypl_1851_1852_doggetts_000267', 'nypl_1851_1852_doggetts_000270']",,[],False
+125,2,"['nypl_1851_1852_doggetts_000601', 'nypl_1851_1852_doggetts_003846']",,[],False
+126,2,"['nypl_1851_1852_doggetts_003051', 'nypl_1851_1852_doggetts_003059']",,[],False
+127,2,"['nypl_1851_1852_doggetts_004785', 'nypl_1851_1852_doggetts_004788']",,[],False
+128,2,"['nypl_1851_1852_doggetts_001051', 'nypl_1851_1852_doggetts_001507']",,[],False
+129,2,"['nypl_1851_1852_doggetts_005946', 'nypl_1851_1852_doggetts_005947']",,[],False
+130,2,"['nypl_1851_1852_doggetts_001191', 'nypl_1851_1852_doggetts_006071']",,[],False
+131,2,"['nypl_1851_1852_doggetts_003137', 'nypl_1851_1852_doggetts_003140']",,[],False
+132,2,"['nypl_1851_1852_doggetts_001441', 'nypl_1851_1852_doggetts_001443']",,[],False
+133,2,"['nypl_1851_1852_doggetts_006587', 'nypl_1851_1852_doggetts_006588']",,[],False
+134,2,"['nypl_1851_1852_doggetts_002532', 'nypl_1851_1852_doggetts_006295']",,[],False
+135,2,"['nypl_1851_1852_doggetts_003213', 'nypl_1851_1852_doggetts_003214']",,[],False
+136,2,"['nypl_1851_1852_doggetts_003237', 'nypl_1851_1852_doggetts_003307']",,[],False
+137,2,"['nypl_1851_1852_doggetts_000400', 'nypl_1851_1852_doggetts_004213']",,[],False
+138,2,"['nypl_1851_1852_doggetts_002629', 'nypl_1851_1852_doggetts_006484']",,[],False
+139,2,"['nypl_1851_1852_doggetts_005388', 'nypl_1851_1852_doggetts_005615']",,[],False
+140,2,"['nypl_1851_1852_doggetts_007222', 'nypl_1851_1852_doggetts_007223']",,[],False
+141,2,"['nypl_1851_1852_doggetts_007865', 'nypl_1851_1852_doggetts_007866']",,[],False
+142,2,"['nypl_1851_1852_doggetts_000723', 'nypl_1851_1852_doggetts_000725']",,[],False
+143,2,"['nypl_1851_1852_doggetts_001365', 'nypl_1851_1852_doggetts_006557']",,[],False
+144,2,"['nypl_1851_1852_doggetts_005006', 'nypl_1851_1852_doggetts_005014']",,[],False
+145,2,"['nypl_1851_1852_doggetts_006126', 'nypl_1851_1852_doggetts_006127']",,[],False
+146,2,"['nypl_1851_1852_doggetts_006785', 'nypl_1851_1852_doggetts_006794']",,[],False
+147,3,"['nypl_1851_1852_doggetts_001453', 'nypl_1851_1852_doggetts_006578', 'nypl_1851_1852_doggetts_006581']",,"['multi_match', 'conflicting_occupation']",True
+148,2,"['nypl_1851_1852_doggetts_001184', 'nypl_1851_1852_doggetts_006186']",,[],False
+149,3,"['nypl_1851_1852_doggetts_004787', 'nypl_1851_1852_doggetts_004883', 'nypl_1851_1852_doggetts_004884']",,['multi_match'],True
+150,2,"['nypl_1851_1852_doggetts_001491', 'nypl_1851_1852_doggetts_006594']",,[],False
+151,3,"['nypl_1851_1852_doggetts_001656', 'nypl_1851_1852_doggetts_005312', 'nypl_1851_1852_doggetts_006548']",,['multi_match'],True
+152,2,"['nypl_1851_1852_doggetts_006043', 'nypl_1851_1852_doggetts_006044']",,[],False
+153,2,"['nypl_1851_1852_doggetts_002065', 'nypl_1851_1852_doggetts_006741']",,[],False
+154,2,"['nypl_1851_1852_doggetts_003189', 'nypl_1851_1852_doggetts_004289']",,[],False
+155,2,"['nypl_1851_1852_doggetts_006754', 'nypl_1851_1852_doggetts_006792']",,[],False
+156,2,"['nypl_1851_1852_doggetts_001448', 'nypl_1851_1852_doggetts_006166']",,[],False
+157,2,"['nypl_1851_1852_doggetts_003894', 'nypl_1851_1852_doggetts_003899']",,[],False
+158,2,"['nypl_1851_1852_doggetts_000751', 'nypl_1851_1852_doggetts_004923']",,[],False
+159,5,"['nypl_1851_1852_doggetts_005033', 'nypl_1851_1852_doggetts_005037', 'nypl_1851_1852_doggetts_005978', 'nypl_1851_1852_doggetts_005979', 'nypl_1851_1852_doggetts_005983']",,['multi_match'],True
+160,2,"['nypl_1851_1852_doggetts_003256', 'nypl_1851_1852_doggetts_003257']",,[],False
+161,2,"['nypl_1851_1852_doggetts_004812', 'nypl_1851_1852_doggetts_005138']",,[],False
+162,2,"['nypl_1851_1852_doggetts_004182', 'nypl_1851_1852_doggetts_004184']",,[],False
+163,2,"['nypl_1851_1852_doggetts_004638', 'nypl_1851_1852_doggetts_004731']",,[],False
+164,2,"['nypl_1851_1852_doggetts_001026', 'nypl_1851_1852_doggetts_006942']",,[],False
+165,2,"['nypl_1851_1852_doggetts_000457', 'nypl_1851_1852_doggetts_000533']",,[],False
+166,2,"['nypl_1851_1852_doggetts_004766', 'nypl_1851_1852_doggetts_004767']",,[],False
+167,2,"['nypl_1851_1852_doggetts_000596', 'nypl_1851_1852_doggetts_003949']",,[],False
+168,2,"['nypl_1851_1852_doggetts_007682', 'nypl_1851_1852_doggetts_007836']",,[],False
+169,2,"['nypl_1851_1852_doggetts_002704', 'nypl_1851_1852_doggetts_004125']",,[],False
+170,2,"['nypl_1851_1852_doggetts_002994', 'nypl_1851_1852_doggetts_003152']",,[],False
+171,2,"['nypl_1851_1852_doggetts_001372', 'nypl_1851_1852_doggetts_005610']",,[],False
+172,2,"['nypl_1851_1852_doggetts_006953', 'nypl_1851_1852_doggetts_006957']",,[],False
+173,2,"['nypl_1851_1852_doggetts_002903', 'nypl_1851_1852_doggetts_003111']",,[],False
+174,2,"['nypl_1851_1852_doggetts_005181', 'nypl_1851_1852_doggetts_005182']",,[],False
+175,2,"['nypl_1851_1852_doggetts_003034', 'nypl_1851_1852_doggetts_003161']",,[],False
+176,2,"['nypl_1851_1852_doggetts_002548', 'nypl_1851_1852_doggetts_006227']",,[],False
+177,4,"['nypl_1851_1852_doggetts_005242', 'nypl_1851_1852_doggetts_005244', 'nypl_1851_1852_doggetts_005247', 'nypl_1851_1852_doggetts_005248']",,['multi_match'],True
+178,2,"['nypl_1851_1852_doggetts_004122', 'nypl_1851_1852_doggetts_004251']",,[],False
+179,3,"['nypl_1851_1852_doggetts_001474', 'nypl_1851_1852_doggetts_001475', 'nypl_1851_1852_doggetts_006169']",,['multi_match'],True
+180,2,"['nypl_1851_1852_doggetts_007726', 'nypl_1851_1852_doggetts_007728']",,[],False
+181,2,"['nypl_1851_1852_doggetts_000816', 'nypl_1851_1852_doggetts_000818']",,[],False
+182,2,"['nypl_1851_1852_doggetts_001082', 'nypl_1851_1852_doggetts_001096']",,[],False
+183,2,"['nypl_1851_1852_doggetts_007761', 'nypl_1851_1852_doggetts_007763']",,[],False
+184,2,"['nypl_1851_1852_doggetts_007872', 'nypl_1851_1852_doggetts_007873']",,[],False
+185,2,"['nypl_1851_1852_doggetts_005777', 'nypl_1851_1852_doggetts_005778']",,[],False
+186,2,"['nypl_1851_1852_doggetts_000918', 'nypl_1851_1852_doggetts_006804']",,[],False
+187,2,"['nypl_1851_1852_doggetts_002965', 'nypl_1851_1852_doggetts_002966']",,[],False
+188,2,"['nypl_1851_1852_doggetts_003013', 'nypl_1851_1852_doggetts_003017']",,[],False
+189,2,"['nypl_1851_1852_doggetts_000405', 'nypl_1851_1852_doggetts_003903']",,[],False
+190,2,"['nypl_1851_1852_doggetts_000455', 'nypl_1851_1852_doggetts_006077']",,[],False
+191,2,"['nypl_1851_1852_doggetts_004657', 'nypl_1851_1852_doggetts_004725']",,[],False
+192,3,"['nypl_1851_1852_doggetts_003576', 'nypl_1851_1852_doggetts_005024', 'nypl_1851_1852_doggetts_005089']",,['multi_match'],True
+193,2,"['nypl_1851_1852_doggetts_001427', 'nypl_1851_1852_doggetts_006165']",,[],False
+194,3,"['nypl_1851_1852_doggetts_001341', 'nypl_1851_1852_doggetts_001342', 'nypl_1851_1852_doggetts_006929']",,['multi_match'],True
+195,2,"['nypl_1851_1852_doggetts_003763', 'nypl_1851_1852_doggetts_003802']",,[],False
+196,4,"['nypl_1851_1852_doggetts_004568', 'nypl_1851_1852_doggetts_004574', 'nypl_1851_1852_doggetts_004632', 'nypl_1851_1852_doggetts_004658']",,['multi_match'],True
+197,2,"['nypl_1851_1852_doggetts_003557', 'nypl_1851_1852_doggetts_003558']",,[],False
+198,2,"['nypl_1851_1852_doggetts_000813', 'nypl_1851_1852_doggetts_000814']",,['conflicting_occupation'],True
+199,2,"['nypl_1851_1852_doggetts_005198', 'nypl_1851_1852_doggetts_005207']",,[],False
+200,3,"['nypl_1851_1852_doggetts_000442', 'nypl_1851_1852_doggetts_003782', 'nypl_1851_1852_doggetts_005143']",,['multi_match'],True
+201,2,"['nypl_1851_1852_doggetts_000605', 'nypl_1851_1852_doggetts_004280']",,[],False
+202,2,"['nypl_1851_1852_doggetts_001405', 'nypl_1851_1852_doggetts_001406']",,[],False
+203,2,"['nypl_1851_1852_doggetts_007317', 'nypl_1851_1852_doggetts_007318']",,[],False
+204,2,"['nypl_1851_1852_doggetts_007769', 'nypl_1851_1852_doggetts_007772']",,[],False
+205,2,"['nypl_1851_1852_doggetts_005158', 'nypl_1851_1852_doggetts_005160']",,[],False
+206,2,"['nypl_1851_1852_doggetts_003046', 'nypl_1851_1852_doggetts_003053']",,[],False
+207,2,"['nypl_1851_1852_doggetts_001868', 'nypl_1851_1852_doggetts_005702']",,[],False
+208,2,"['nypl_1851_1852_doggetts_000822', 'nypl_1851_1852_doggetts_000846']",,[],False
+209,2,"['nypl_1851_1852_doggetts_007379', 'nypl_1851_1852_doggetts_007384']",,[],False
+210,2,"['nypl_1851_1852_doggetts_003162', 'nypl_1851_1852_doggetts_003163']",,[],False
+211,2,"['nypl_1851_1852_doggetts_003540', 'nypl_1851_1852_doggetts_003551']",,[],False
+212,2,"['nypl_1851_1852_doggetts_004978', 'nypl_1851_1852_doggetts_005951']",,[],False
+213,2,"['nypl_1851_1852_doggetts_001462', 'nypl_1851_1852_doggetts_006251']",,[],False
+214,2,"['nypl_1851_1852_doggetts_003330', 'nypl_1851_1852_doggetts_003331']",,[],False
+215,2,"['nypl_1851_1852_doggetts_000824', 'nypl_1851_1852_doggetts_000833']",,[],False
+216,2,"['nypl_1851_1852_doggetts_001309', 'nypl_1851_1852_doggetts_001612']",,[],False
+217,2,"['nypl_1851_1852_doggetts_003061', 'nypl_1851_1852_doggetts_003062']",,[],False
+218,2,"['nypl_1851_1852_doggetts_001240', 'nypl_1851_1852_doggetts_001241']",,[],False
+219,2,"['nypl_1851_1852_doggetts_001247', 'nypl_1851_1852_doggetts_001248']",,[],False
+220,3,"['nypl_1851_1852_doggetts_004945', 'nypl_1851_1852_doggetts_004946', 'nypl_1851_1852_doggetts_004951']",,['multi_match'],True
+221,2,"['nypl_1851_1852_doggetts_001756', 'nypl_1851_1852_doggetts_001786']",,[],False
+222,2,"['nypl_1851_1852_doggetts_007234', 'nypl_1851_1852_doggetts_007235']",,[],False
+223,2,"['nypl_1851_1852_doggetts_004795', 'nypl_1851_1852_doggetts_004798']",,[],False
+224,2,"['nypl_1851_1852_doggetts_003115', 'nypl_1851_1852_doggetts_003183']",,[],False
+225,2,"['nypl_1851_1852_doggetts_005371', 'nypl_1851_1852_doggetts_005383']",,[],False
+226,2,"['nypl_1851_1852_doggetts_004248', 'nypl_1851_1852_doggetts_004249']",,[],False
+227,2,"['nypl_1851_1852_doggetts_004410', 'nypl_1851_1852_doggetts_004539']",,[],False
+228,2,"['nypl_1851_1852_doggetts_001616', 'nypl_1851_1852_doggetts_005827']",,[],False
+229,2,"['nypl_1851_1852_doggetts_001590', 'nypl_1851_1852_doggetts_001591']",,[],False
+230,2,"['nypl_1851_1852_doggetts_003004', 'nypl_1851_1852_doggetts_003006']",,[],False
+231,2,"['nypl_1851_1852_doggetts_002596', 'nypl_1851_1852_doggetts_002597']",,[],False
+232,2,"['nypl_1851_1852_doggetts_000757', 'nypl_1851_1852_doggetts_000758']",,[],False
+233,2,"['nypl_1851_1852_doggetts_000252', 'nypl_1851_1852_doggetts_000254']",,[],False

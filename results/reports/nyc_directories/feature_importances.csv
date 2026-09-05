@@ -1,0 +1,11 @@
+,importance
+best_address_jw,0.3613563460696715
+occupation_jw,0.19442344689498506
+occupation_exact,0.18678637848862747
+address_business_jw,0.14039635742720577
+address_home_jw,0.06089064983294167
+address_home_both_observed,0.02878712021880654
+given_name_jw,0.014071804270410843
+address_business_both_observed,0.006409241835002241
+given_name_exact,0.004383692018059701
+occupation_both_observed,0.0024949629442892218

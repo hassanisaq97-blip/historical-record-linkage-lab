@@ -1,0 +1,253 @@
+"""Reproducible pipeline for both parts of this project:
+
+1. The synthetic benchmark (census + parish register, controlled ground
+   truth) - rules prefixed nothing special, mirrors historical-record-
+   linkage-lab's original scope.
+2. The NYC city directory 1851/52 real-world case study - rules prefixed
+   `nyc_`. Its raw source data is vendored under data/raw/nyc_directories/
+   (see PROVENANCE.md there) rather than downloaded at run time: this
+   environment's network access is restricted to GitHub and package
+   registries, and NYPL/Internet Archive/HathiTrust are unreachable from
+   it (verified empirically, see docs/limitations.md). The `nyc_acquire`
+   rule therefore parses the vendored OCR text rather than fetching it.
+
+Both run locally on modest data sizes - this is explicitly not a claim of
+HPC/production scale.
+
+Usage (from the repository root):
+    snakemake --snakefile workflow/Snakefile --cores 1
+"""
+
+DATA_RAW = "data/raw"
+DATA_PROCESSED = "data/processed"
+RESULTS_REPORTS = "results/reports"
+RESULTS_FIGURES = "results/figures"
+
+NYC_RAW = "data/raw/nyc_directories"
+NYC_PROCESSED = "data/processed/nyc_directories"
+NYC_REPORTS = "results/reports/nyc_directories"
+NYC_FIGURES = "results/figures/nyc_directories"
+
+rule all:
+    input:
+        # Synthetic benchmark
+        f"{RESULTS_REPORTS}/metrics_comparison.csv",
+        f"{RESULTS_REPORTS}/life_course_sanity_checks.md",
+        f"{RESULTS_REPORTS}/constrained_assignment.md",
+        f"{RESULTS_FIGURES}/method_comparison.png",
+        f"{RESULTS_FIGURES}/feature_importance.png",
+        # NYC directories real-world case study
+        f"{NYC_REPORTS}/data_quality_report.md",
+        f"{NYC_REPORTS}/metrics_comparison.csv",
+        f"{NYC_REPORTS}/constrained_assignment.md",
+        f"{NYC_REPORTS}/entity_resolution_ml_constrained.md",
+        f"{NYC_REPORTS}/parser_cross_validation.md",
+
+# ---------------------------------------------------------------------
+# Synthetic benchmark
+# ---------------------------------------------------------------------
+
+rule generate_data:
+    output:
+        f"{DATA_RAW}/ground_truth_population.csv",
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+    shell:
+        "python -m linkage_lab.cli generate-data"
+
+rule standardize:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+    output:
+        f"{DATA_PROCESSED}/census_std.csv",
+        f"{DATA_PROCESSED}/parish_std.csv",
+    shell:
+        "python -m linkage_lab.cli standardize"
+
+rule build_dataset:
+    input:
+        f"{DATA_PROCESSED}/census_std.csv",
+        f"{DATA_PROCESSED}/parish_std.csv",
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+    output:
+        f"{DATA_PROCESSED}/candidate_pairs.csv",
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+    shell:
+        "python -m linkage_lab.cli build-dataset"
+
+rule link_rule_based:
+    input:
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+    output:
+        f"{DATA_PROCESSED}/predictions_rule_based.csv",
+    shell:
+        "python -m linkage_lab.cli link-rule-based"
+
+rule link_ml:
+    input:
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+    output:
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+        f"{DATA_PROCESSED}/ml_model.joblib",
+        f"{RESULTS_FIGURES}/feature_importance.png",
+    shell:
+        "python -m linkage_lab.cli link-ml"
+
+rule constrained_assignment:
+    input:
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{DATA_PROCESSED}/constrained_ml.csv",
+        f"{RESULTS_REPORTS}/constrained_assignment.md",
+    shell:
+        "python -m linkage_lab.cli constrained-assignment"
+
+rule evaluate:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+        f"{DATA_PROCESSED}/labeled_pairs.csv",
+        f"{DATA_PROCESSED}/predictions_rule_based.csv",
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{RESULTS_REPORTS}/metrics_comparison.csv",
+        f"{RESULTS_FIGURES}/method_comparison.png",
+    shell:
+        "python -m linkage_lab.cli evaluate"
+
+rule life_course:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+        f"{DATA_PROCESSED}/predictions_rule_based.csv",
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+        f"{DATA_PROCESSED}/constrained_ml.csv",
+    output:
+        f"{RESULTS_REPORTS}/life_course_sanity_checks.md",
+    shell:
+        "python -m linkage_lab.cli life-course"
+
+# Not part of `rule all`: experimental, requires a local Ollama server
+# (see docs/limitations.md - unreachable from this environment), and is
+# never used for the headline metrics. Run explicitly with:
+#   snakemake --snakefile workflow/Snakefile --cores 1 llm_supplement
+rule llm_supplement:
+    input:
+        f"{DATA_RAW}/census.csv",
+        f"{DATA_RAW}/parish_register.csv",
+        f"{DATA_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{RESULTS_REPORTS}/llm_experimental_supplement.md",
+    shell:
+        "python -m linkage_lab.cli link-llm-experimental"
+
+# ---------------------------------------------------------------------
+# NYC city directory 1851/52 - real-world case study
+# ---------------------------------------------------------------------
+
+rule nyc_acquire:
+    input:
+        f"{NYC_RAW}/nypl-1851-1852-entries-sample.txt",
+        f"{NYC_RAW}/nypl-labeled-70-training.csv",
+    output:
+        f"{NYC_PROCESSED}/parsed_entries.csv",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli acquire"
+
+rule nyc_cross_validate_parser:
+    input:
+        f"{NYC_RAW}/nypl-labeled-70-training.csv",
+    output:
+        f"{NYC_REPORTS}/parser_cross_validation.md",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli cross-validate-parser"
+
+rule nyc_standardize:
+    input:
+        f"{NYC_PROCESSED}/parsed_entries.csv",
+    output:
+        f"{NYC_PROCESSED}/standardized_entries.csv",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli standardize"
+
+rule nyc_block:
+    input:
+        f"{NYC_PROCESSED}/standardized_entries.csv",
+    output:
+        f"{NYC_PROCESSED}/blocked_entries.csv",
+        f"{NYC_PROCESSED}/candidate_pairs.csv",
+        f"{NYC_REPORTS}/blocking_reduction.md",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli block"
+
+rule nyc_data_quality:
+    input:
+        f"{NYC_PROCESSED}/parsed_entries.csv",
+        f"{NYC_PROCESSED}/blocked_entries.csv",
+    output:
+        f"{NYC_REPORTS}/data_quality_report.md",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli data-quality"
+
+rule nyc_features:
+    input:
+        f"{NYC_PROCESSED}/blocked_entries.csv",
+        f"{NYC_PROCESSED}/candidate_pairs.csv",
+    output:
+        f"{NYC_PROCESSED}/candidate_features.csv",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli features"
+
+rule nyc_link_rule_based:
+    input:
+        f"{NYC_PROCESSED}/candidate_features.csv",
+        f"{NYC_RAW}/manual_benchmark_labels.csv",
+    output:
+        f"{NYC_PROCESSED}/predictions_rule_based.csv",
+        f"{NYC_PROCESSED}/predictions_rule_based_full.csv",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli link-rule-based"
+
+rule nyc_link_ml:
+    input:
+        f"{NYC_PROCESSED}/candidate_features.csv",
+        f"{NYC_RAW}/manual_benchmark_labels.csv",
+    output:
+        f"{NYC_PROCESSED}/predictions_ml.csv",
+        f"{NYC_PROCESSED}/predictions_ml_full.csv",
+        f"{NYC_FIGURES}/feature_importance.png",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli link-ml"
+
+rule nyc_constrained_assignment:
+    input:
+        f"{NYC_PROCESSED}/predictions_ml_full.csv",
+    output:
+        f"{NYC_PROCESSED}/constrained_ml.csv",
+        f"{NYC_REPORTS}/constrained_assignment.md",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli constrained-assignment"
+
+rule nyc_evaluate:
+    input:
+        f"{NYC_PROCESSED}/blocked_entries.csv",
+        f"{NYC_PROCESSED}/predictions_rule_based.csv",
+        f"{NYC_PROCESSED}/predictions_ml.csv",
+    output:
+        f"{NYC_REPORTS}/metrics_comparison.csv",
+        f"{NYC_FIGURES}/method_comparison.png",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli evaluate"
+
+rule nyc_entity_resolution:
+    input:
+        f"{NYC_PROCESSED}/blocked_entries.csv",
+        f"{NYC_PROCESSED}/predictions_rule_based_full.csv",
+        f"{NYC_PROCESSED}/predictions_ml_full.csv",
+        f"{NYC_PROCESSED}/constrained_ml.csv",
+    output:
+        f"{NYC_REPORTS}/entity_resolution_ml_constrained.md",
+    shell:
+        "python -m linkage_lab.nyc_directories.cli entity-resolution"
